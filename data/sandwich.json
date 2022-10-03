@@ -1,0 +1,62 @@
+[
+    {
+        "id":1,
+        "name":"Sendvic 1",
+        "ingredients":["Chicken", "Olive Oil", "Salt"],
+        "price":250,
+        "img":{
+            "src":"images/sandwich-1.jpg",
+            "alt":"Sandwich 1"
+        }
+    },
+    {
+        "id":2,
+        "name":"Sendvic 2",
+        "ingredients":["Chicken", "Olive Oil", "Salt"],
+        "price":250,
+        "img":{
+            "src":"images/sandwich-2.jpg",
+            "alt":"Sandwich 2"
+        }
+    },
+    {
+        "id":3,
+        "name":"Sendvic 3",
+        "ingredients":["Chicken", "Olive Oil", "Salt"],
+        "price":250,
+        "img":{
+            "src":"images/sandwich-3.jpg",
+            "alt":"Sandwich 3"
+        }
+    },
+    {
+        "id":4,
+        "name":"Sendvic 4",
+        "ingredients":["Chicken", "Olive Oil", "Salt"],
+        "price":250,
+        "img":{
+            "src":"images/sandwich-4.jpg",
+            "alt":"Sandwich 4"
+        }
+    },
+    {
+        "id":5,
+        "name":"Sendvic 5",
+        "ingredients":["Chicken", "Olive Oil", "Salt"],
+        "price":250,
+        "img":{
+            "src":"images/sandwich-5.jpg",
+            "alt":"Sandwich 5"
+        }
+    },
+    {
+        "id":6,
+        "name":"Sendvic 6",
+        "ingredients":["Chicken", "Olive Oil", "Salt"],
+        "price":250,
+        "img":{
+            "src":"images/sandwich-6.jpg",
+            "alt":"Sandwich 6"
+        }
+    }
+]

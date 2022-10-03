@@ -1,0 +1,140 @@
+[
+    {
+        "id":1,
+        "name":"Pizza 1",
+        "ingredients":["Chicken", "Olive Oil", "Salt"],
+        "pricing":[
+            {
+                "size":50,
+                "price":1090
+            },
+            {
+                "size":32,
+                "price":890
+            }
+        ],
+        "img":{
+            "src":"images/pizza-1.jpg",
+            "alt":"Pizza 1"
+        }
+    },
+    {
+        "id":2,
+        "name":"Pizza 2",
+        "ingredients":["Chicken", "Olive Oil", "Salt"],
+        "pricing":[
+            {
+                "size":50,
+                "price":1090
+            },
+            {
+                "size":32,
+                "price":890
+            }
+        ],
+        "img":{
+            "src":"images/pizza-2.jpg",
+            "alt":"Pizza 2"
+        }
+    },
+    {
+        "id":3,
+        "name":"Pizza 3",
+        "ingredients":["Chicken", "Olive Oil", "Salt"],
+        "pricing":[
+            {
+                "size":50,
+                "price":1090
+            },
+            {
+                "size":32,
+                "price":890
+            }
+        ],
+        "img":{
+            "src":"images/pizza-3.jpg",
+            "alt":"Pizza 3"
+        }
+    },
+    {
+        "id":4,
+        "name":"Pizza 4",
+        "ingredients":["Chicken", "Olive Oil", "Salt"],
+        "pricing":[
+            {
+                "size":50,
+                "price":1090
+            },
+            {
+                "size":32,
+                "price":890
+            }
+        ],
+        "img":{
+            "src":"images/pizza-4.jpg",
+            "alt":"Pizza 4"
+        }
+    },
+    {
+        "id":5,
+        "name":"Pizza 5",
+        "ingredients":["Chicken", "Olive Oil", "Salt"],
+        "pricing":[
+            {
+                "size":50,
+                "price":1090
+            },
+            {
+                "size":32,
+                "price":890
+            }
+        ],
+        "img":{
+            "src":"images/pizza-5.jpg",
+            "alt":"Pizza 5"
+        }
+    },
+    {
+        "id":6,
+        "name":"Pizza 6",
+        "ingredients":["Chicken", "Olive Oil", "Salt"],
+        "pricing":[
+            {
+                "size":50,
+                "price":1090
+            },
+            {
+                "size":32,
+                "price":890
+            }
+            ,
+            {
+                "size":20,
+                "price":500
+            }
+        ],
+        "img":{
+            "src":"images/pizza-6.jpg",
+            "alt":"Pizza 6"
+        }
+    },
+    {
+        "id":7,
+        "name":"Pizza 7",
+        "ingredients":["Chicken", "Olive Oil", "Salt"],
+        "pricing":[
+            {
+                "size":50,
+                "price":1090
+            },
+            {
+                "size":32,
+                "price":890
+            }
+        ],
+        "img":{
+            "src":"images/pizza-7.jpg",
+            "alt":"Pizza 7"
+        }
+    }
+]
