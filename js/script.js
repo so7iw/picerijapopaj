@@ -1,7 +1,7 @@
 var w = 0;
 $(function() {
     "use strict";
-
+/*
         $(window).scroll(function() {
             if ($(this).scrollTop() > 90){  
                 $('.top-scrolling').addClass("sticky");
@@ -9,7 +9,15 @@ $(function() {
             else{
                 $('.top-scrolling').removeClass("sticky");
             }
-        });
+        });*/
+
+        $(function () {
+            $(document).scroll(function () {
+              var $nav = $("#header");
+              $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+              $('.top-scrolling').toggleClass("sticky", $(this).scrollTop() > 90);
+            });
+          });
 
         function responsive_dropdown (){
             /*---- Scrolling js -----*/

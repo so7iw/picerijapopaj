@@ -196,7 +196,7 @@
 	.sandwichListItem{font-size: 16px;}
 	.sandwichList{width:50%;}
 	.menu-width {max-width: 0 !important; padding: 0;}
-	#menu { background: #fd9d3e; border-bottom: 0 none; bottom: 0; box-shadow: 0 0 1px rgba(0, 0, 0, 0.2); display: inline-block !important; height: 100% !important; left: -100%; margin: 0 !important; position: fixed !important; top: 70px !important; width: 100%; z-index: 2; transition: all 0.4s ease 0s; -moz-transition: all 0.4s ease 0s; -webkit-transition: all 0.4s ease 0s; -o-transition: all 0.4s ease 0s; overflow-y: auto !important; overflow-x: hidden !important; padding-right: 0;}
+	#menu { background: #e63636; border-bottom: 0 none; bottom: 0; box-shadow: 0 0 1px rgba(0, 0, 0, 0.2); display: inline-block !important; height: 100% !important; left: -100%; margin: 0 !important; position: fixed !important; top: 70px !important; width: 100%; z-index: 2; transition: all 0.4s ease 0s; -moz-transition: all 0.4s ease 0s; -webkit-transition: all 0.4s ease 0s; -o-transition: all 0.4s ease 0s; overflow-y: auto !important; overflow-x: hidden !important; padding-right: 0;}
 	#menu.show, #menu.menu-open {left: 0;}
 	.navbar-collapse {padding: 15px 15px 0 0;}
 	.navbar-collapse > ul {margin: 0;     width: 100%;}
@@ -279,6 +279,7 @@
 	.menu-img .menu-image {width: 100%; height: unset; max-width: 150px;}
 	.online-call{font-size: 25px; padding: 10px 10px 10px 40px; background-size: 25px; width: unset;}
 	.online-booking .form-control{height: 42px; padding: 0px 15px;}
+	.inputfile + label{height: 42px; padding: 10px 15px;}
 	.online-booking .form-group {margin-bottom: 20px;}
 	.more-table-v{padding: 10px 30px;}
 	.online-booking .custom-select-trigger{line-height: 42px; padding: 0px 15px;}
@@ -391,7 +392,7 @@
 	.crust-title {font-size: 30px;}
 	.crust-banner {padding: 40px 40px;}
 	.filter-part .custom-select-trigger {padding: 0px 0px; line-height: unset;}
-	.filter-part .form-control{height: unset;}
+	.filter-part .form-control .inputfile + label{height: unset;}
 	.filter-part .filter-line li {padding: 10px 15px;}
 	.filter-part .filter-line li:first-child {padding: 10px 15px;}
 	.filter-part .filter-line li:last-child{padding: 13px 15px;}
@@ -601,6 +602,7 @@
 	.details-com {width: 100%; float: unset;}
 	.button-comme {width: 100%; float: unset; text-align: unset; margin-top: 15px;}
 	.leave .form-control{padding: 10px 10px; height: 40px;}
+	.inputfile + label{padding:7px 10px; height:40px;}
 	.leave textarea.form-control {height: 150px;}
 	.leave .form-group {margin-bottom: 10px;}
 	.post-com{padding: 10px 15px;}
