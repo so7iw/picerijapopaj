@@ -13,9 +13,9 @@ $(function() {
 
         $(function () {
             $(document).scroll(function () {
-              var $nav = $("#header");
-              $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-              $('.top-scrolling').toggleClass("sticky", $(this).scrollTop() > 90);
+              /*var $nav = $("#header");
+              $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());*/
+              $('.top-scrolling, .widgetPhone').toggleClass("sticky", $(this).scrollTop() > 90);
             });
           });
 
@@ -36,6 +36,11 @@ $(function() {
             $(".level-1").on("click", function(){
               $(".level-1, .megamenu-1").toggleClass("active");
             });
+
+            $(".sideMenuCollapse").on("click", function(){
+                $(".navbar-toggle").toggleClass("active");
+                $(".navbar-collapse").toggleClass("show");
+              });
 
             $(".set > .opener").on("click", function() {
                 if ($(this).hasClass("active")) {
@@ -118,8 +123,34 @@ $(function() {
                 $("#"+tab_id).addClass('current');
             })
 
-            /* Product Detail description tab End */
+            /* Product Detail description tab End onmouseover="this.src='${el.img.src2}';" onmouseout="this.src='${el.img.src}';" */
         };
+
+        function printPancakeMenu(json){
+            let output = ``;
+            json.forEach(el => {
+                output += `
+                <div class="col-xl-4 col-lg-4 col-md-4">
+					<div class="menu-list-box">
+						<div class="list-img-3"><img src="${el.img.src}" alt="${el.img.alt}"></div>
+						<div class="menu-detail">
+							<ul>`;
+                el.ingredients.forEach(ing => {
+                    output += `
+                    <li>${ing}</li>
+                    `
+                });
+                output += `
+							</ul>
+						</div>
+					</div>
+				</div>
+                `;
+            });
+            document.getElementById('sweetPancakeMenu').innerHTML = output;
+
+            console.log("sweetPancake print done.");
+        }
 
         function printSandwichMenu (json){
             let output = ``;
@@ -127,7 +158,7 @@ $(function() {
                 output += `
                 <div class="col-xl-4 col-lg-4 col-md-4">
 					<div class="menu-list-box">
-						<div class="list-img"><img src="${el.img.src}" alt="${el.img.src}"></div>
+						<div class="list-img"><img src="${el.img.src}" alt="${el.img.alt}"></div>
 						<div class="menu-detail">
 							<a href="#" class="iteam-name">${el.name} </a>
 							<ul>`;
@@ -145,11 +176,13 @@ $(function() {
                 `;
             });
             document.getElementById('sandwichMenu').innerHTML = output;
+
+            console.log("Sandwich print done.");
+
+            fetchData("pancake", printPancakeMenu);
         }
 
         function printPizzaMenu (json){
-            console.log("ovo je print fn");
-            
             let output = ``;
             json.forEach(el => {
                 output += `
@@ -179,6 +212,8 @@ $(function() {
             });
             document.getElementById('pizzaMenu').innerHTML = output;
 
+            console.log("Pizza print done.");
+
             fetchData("sandwich", printSandwichMenu);
         }
 
@@ -196,18 +231,23 @@ $(function() {
             });
         }
 
-        $(window).on("load", function() {
-            /* -------- preloader ------- */
-            $('#preloader').delay(1000).fadeOut(500);
-            /*------End----------*/
+        /*$(window).on("load", function() {
+            let today = new Date();
+            console.log("Loader started."+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds());
 
+            $('#preloader').delay(1000).fadeOut(500);
+
+            console.log("Loader ended.");
             var pizzaMenu = document.getElementById("pizzaMenu");
+            console.log("Pizza element loaded.");
             if(pizzaMenu != null){
                 fetchData("pizza", printPizzaMenu);
             }
+            console.log("responsive dropdown triggered."+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds());
+            responsive_dropdown ();
         });
 
-        /* Custom select drop dwon */
+         Custom select drop dwon 
 
         $(".custom-select").each(function() {
             var classes = $(this).attr("class"),
@@ -243,7 +283,7 @@ $(function() {
             $(this).addClass("selection");
             $(this).parents(".custom-select").removeClass("opened");
             $(this).parents(".custom-select").find(".custom-select-trigger").text($(this).text());
-        });
+        });*/
 
         /* Custom select drop dwon End */
 
@@ -304,7 +344,7 @@ $(function() {
             });
         }
 
-        /* Customer Reviews */
+        /* Customer Reviews 
 
         if ($(".customer-slide").length > 0) {
             $('.customer-slide').owlCarousel({
@@ -325,6 +365,23 @@ $(function() {
         }
 
         $(document).ready(function() {
+            let today = new Date();
+            console.log("document ready triggered."+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds());
+            responsive_dropdown ();
+        });*/
+        $(document).ready(function(){
+            let today = new Date();
+            console.log("Loader started."+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds());
+            /* -------- preloader ------- */
+            $('#preloader').delay(1000).fadeOut(500);
+            /*------End----------*/
+            console.log("Loader ended.");
+            var pizzaMenu = document.getElementById("pizzaMenu");
+            console.log("Pizza element loaded.");
+            if(pizzaMenu != null){
+                fetchData("pizza", printPizzaMenu);
+            }
+            console.log("responsive dropdown triggered."+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds());
             responsive_dropdown ();
         });
 });

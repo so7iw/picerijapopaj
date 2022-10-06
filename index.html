@@ -37,7 +37,7 @@
 				<div class="col-xl-3 col-lg-2 col-md-4 col-3 p-0">
 					<div class="navbar-header">
 						<a class="navbar-brand page-scroll" href="index.html">
-							<img alt="pizzon" src="images/header-logo.png">
+							<img alt="popaj" src="images/header-logo.png">
 						</a>
 					</div>
 				</div>
@@ -48,31 +48,25 @@
 								<a href="index.html" class="page-scroll">Početna</a>
 							</li>
 							<li class="level dropdown set">
-								<a href="menu-1.html" class="page-scroll">Meni</a>
+								<a href="#menuNew" class="page-scroll scrollTo">Meni</a>
 								<span class="opener plus"></span>
 								<div class="megamenu mobile-sub-menu content megamenu-big">
 									<div class="megamenu-inner-top">
 										<ul class="sub-menu-level1">
 											<li class="level2 menu-list-d">
 												<ul class="sub-menu-level2 ">
-													<li><a href="#">Menu list</a></li>
-													<li><a href="#">Menu grid</a></li>
-													<li><a href="#">Speciajal kuće</a></li>
-													<li><a href="#">Pica</a></li>
-													<li><a href="#">Palačinke</a></li>
-													<li><a href="#">Sendviči</a></li>
+													<li><a href="#pizzaMenuAnchor" class="scrollTo">Pice</a></li>
+													<li><a href="#sandwichMenuAnchor" class="scrollTo">Sendviči</a></li>
+													<li><a href="#sweetPancakeMenuAnchor" class="scrollTo">Slatke Palačinke</a></li>
+													<li><a href="#pancakeMenuAnchor" class="scrollTo">Slane Palačinke</a></li>
 												</ul>
 											</li>
 											<li class="level2 level2 menu-list-res">
 												<ul class="sub-menu-level2 ">
-													<li class="level3"><a href="#"><span>■</span>Menu list</a></li>
-													<!--menu-2.html-->
-													<li class="level3"><a href="#"><span>■</span>Menu grid</a></li>
-													<!--menu-1.html-->
-													<li class="level3"><a href="#"><span>■</span>Specijal kuće</a></li>
-													<li class="level3"><a href="#"><span>■</span>Pica</a></li>
-													<li class="level3"><a href="#"><span>■</span>Palačinke</a></li>
-													<li class="level3"><a href="#"><span>■</span>Sendviči</a></li>
+													<li class="level3"><a href="#pizzaMenuAnchor" class="scrollTo sideMenuCollapse"><span>■</span>Pice</a></li>
+													<li class="level3"><a href="#sandwichMenuAnchor" class="scrollTo sideMenuCollapse"><span>■</span>Sendviči</a></li>
+													<li class="level3"><a href="#sweetPancakeMenuAnchor" class="scrollTo sideMenuCollapse"><span>■</span>Slatke Palačinke</a></li>
+													<li class="level3"><a href="#pancakeMenuAnchor" class="scrollTo sideMenuCollapse"><span>■</span>Slane Palačinke</a></li>
 												</ul>
 											</li>
 										</ul>
@@ -80,7 +74,7 @@
 								</div>
 							</li>
 							<li class="level">
-								<a href="about.html" class="page-scroll">O nama</a>
+								<a href="#" class="page-scroll">O nama</a>
 							</li>
 							<li class="level">
 								<a href="contact.html" class="page-scroll">Kontakt</a>
@@ -228,36 +222,34 @@
 			</div>
 			<div class="row">
 				<div class="col-xl-4 col-lg-4 col-md-4 text-center speciality-box">
-					<div class="speciality-img"><a href="shop-detail.html"><img src="images/speciality-1.jpg"
+					<div class="speciality-img"><a href="#"><img src="images/speciality-1.jpg"
 								alt="speciality" class="spec-image"></a></div>
-					<a href="shop-detail.html" class="ser-title text-uppercase font-weight-bold">Popaj Pica</a>
+					<p class="ser-title text-uppercase font-weight-bold">Brokoli pica</p>
 				</div>
 				<div class="col-xl-4 col-lg-4 col-md-4 text-center speciality-box">
-					<div class="speciality-img"><a href="shop-detail.html"><img src="images/speciality-2.jpg"
+					<div class="speciality-img"><a href="#"><img src="images/speciality-2.jpg"
 								alt="speciality" class="spec-image"></a></div>
-					<a href="shop-detail.html" class="ser-title text-uppercase font-weight-bold">Kaprićoza</a>
+					<p class="ser-title text-uppercase font-weight-bold">Cezar pica</p>
 				</div>
 				<div class="col-xl-4 col-lg-4 col-md-4 text-center speciality-box">
-					<div class="speciality-img"><a href="shop-detail.html"><img src="images/speciality-3.jpg"
+					<div class="speciality-img"><a href="#"><img src="images/speciality-3.jpg"
 								alt="speciality" class="spec-image"></a></div>
-					<a href="shop-detail.html" class="ser-title text-uppercase font-weight-bold">Margarita</a>
+					<p class="ser-title text-uppercase font-weight-bold">Kinder palačinka</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-xl-12 col-lg-12 col-md-12 text-center">
-					<a href="#meniNovi" class="com-btn">Pogledajte meni</a>
-					<!--menu-1.html-->
+					<a href="#meniNew" class="com-btn scrollTo">Pogledajte meni</a>
 				</div>
 			</div>
 		</div>
 	</section>
-
-	<section class="menu-list">
+	<section class="menu-list" id="meniNew">
 		<div class="headding-part text-center pb-50">
 			<h2 class="headding-title text-uppercase font-weight-bold">Meni</h2>
 		</div>
 		<div class="headding-part text-center pb-50">
-			<h2 class="headding-sub">Pice</h2>
+			<h2 class="headding-sub" id="pizzaMenuAnchor">Pice</h2>
 		</div>
 		<div class="container">
 			<div class="row" id="pizzaMenu">
@@ -265,44 +257,52 @@
 		</div>
 
 		<div class="headding-part text-center pb-50">
-			<h2 class="headding-sub">Sendviči</h2>
+			<h2 class="headding-sub" id="sandwichMenuAnchor">Sendviči</h2>
 		</div>
 		<div class="container">
 			<div class="row  pb-50">
 				<div class="col-xl-6 col-lg-6 col-md-6 menuListContainer pb-30"
 					style="text-align: center; border-right: 2px solid #888888">
-					<h3 class="text-uppercase pb-50" style="color:#888888; font-weight: 500;">Cene sendviča</h3>
+					<h3 class="text-uppercase pb-50" style="color:#888888; font-weight: 500;">osnova</h3>
 					<ul class="sandwichList">
 						<li class="menuContent">
 							<p class="sandwichListItem">šunka</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">190</p>
 						</li>
 						<li class="menuContent">
-							<p class="sandwichListItem">pileća prsa</p>
+							<p class="sandwichListItem">pileća&nbsp;prsa</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">200</p>
 						</li>
 						<li class="menuContent">
-							<p class="sandwichListItem">ćureća prsa</p>
+							<p class="sandwichListItem">ćureća&nbsp;prsa</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">200</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">pečenica</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">220</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">kulen</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">220</p>
 						</li>
 						<li class="menuContent">
-							<p class="sandwichListItem">suvi vrat</p>
+							<p class="sandwichListItem">suvi&nbsp;vrat</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">220</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">pršuta</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">250</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">tunjevina</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">220</p>
 						</li>
 					</ul>
@@ -312,26 +312,32 @@
 					<ul class="sandwichList">
 						<li class="menuContent">
 							<p class="sandwichListItem">suhomesnato</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">50</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">kačkavalj</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">50</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">pršuta</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">60</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">jaje</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">30</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">kajmak</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">30</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">ajvar</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">30</p>
 						</li>
 					</ul>
@@ -340,130 +346,59 @@
 			<div class="row" id="sandwichMenu">
 			</div>
 		</div>
-		<div class="headding-part text-center pb-50">
-			<h2 class="headding-sub">Slane Palačinke</h2>
-		</div>
-		<div class="container">
-			<div class="row  pb-50">
-				<div class="col-xl-6 col-lg-6 col-md-6 menuListContainer pb-30"
-					style="text-align: center; border-right: 2px solid #888888">
-					<h3 class="text-uppercase pb-50" style="color:#888888; font-weight: 500;">glavni sastojak</h3>
-					<ul class="sandwichList">
-						<li class="menuContent">
-							<p class="sandwichListItem">šunka</p>
-							<p class="sandwichListItem">220</p>
-						</li>
-						<li class="menuContent">
-							<p class="sandwichListItem">pileća prsa</p>
-							<p class="sandwichListItem">230</p>
-						</li>
-						<li class="menuContent">
-							<p class="sandwichListItem">ćureća prsa</p>
-							<p class="sandwichListItem">230</p>
-						</li>
-						<li class="menuContent">
-							<p class="sandwichListItem">pečenica</p>
-							<p class="sandwichListItem">240</p>
-						</li>
-						<li class="menuContent">
-							<p class="sandwichListItem">kulen</p>
-							<p class="sandwichListItem">240</p>
-						</li>
-						<li class="menuContent">
-							<p class="sandwichListItem">suvi vrat</p>
-							<p class="sandwichListItem">240</p>
-						</li>
-						<li class="menuContent">
-							<p class="sandwichListItem">pršuta</p>
-							<p class="sandwichListItem">250</p>
-						</li>
-						<li class="menuContent">
-							<p class="sandwichListItem">tunjevina</p>
-							<p class="sandwichListItem">220</p>
-						</li>
-						<li class="menuContent">
-							<p class="sandwichListItem">samo namaz</p>
-							<p class="sandwichListItem">170</p>
-						</li>
-					</ul>
-				</div>
-				<div class="col-xl-6 col-lg-6 col-md-6 menuListContainer pb-30" style="text-align: center;">
-					<h3 class="text-uppercase pb-50" style="color:#888888; font-weight: 500;">dodaci</h3>
-					<ul class="sandwichList">
-						<li class="menuContent">
-							<p class="sandwichListItem">suhomesnato</p>
-							<p class="sandwichListItem">50</p>
-						</li>
-						<li class="menuContent">
-							<p class="sandwichListItem">kačkavalj</p>
-							<p class="sandwichListItem">50</p>
-						</li>
-						<li class="menuContent">
-							<p class="sandwichListItem">pršuta</p>
-							<p class="sandwichListItem">60</p>
-						</li>
-						<li class="menuContent">
-							<p class="sandwichListItem">jaje</p>
-							<p class="sandwichListItem">30</p>
-						</li>
-						<li class="menuContent">
-							<p class="sandwichListItem">kajmak</p>
-							<p class="sandwichListItem">30</p>
-						</li>
-						<li class="menuContent">
-							<p class="sandwichListItem">ajvar</p>
-							<p class="sandwichListItem">30</p>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row" id="pancakeMenu">
-			</div>
-		</div>
 
 		<div class="headding-part text-center pb-50">
-			<h2 class="headding-sub">Slatke Palačinke</h2>
+			<h2 class="headding-sub" id="sweetPancakeMenuAnchor">Slatke Palačinke</h2>
 		</div>
 		<div class="container">
 			<div class="row  pb-50">
 				<div class="col-xl-6 col-lg-6 col-md-6 menuListContainer pb-30"
 					style="text-align: center; border-right: 2px solid #888888">
-					<h3 class="text-uppercase pb-50" style="color:#888888; font-weight: 500;">glavni sastojak</h3>
+					<h3 class="text-uppercase pb-50" style="color:#888888; font-weight: 500;">osnova</h3>
 					<ul class="sandwichList">
 						<li class="menuContent">
 							<p class="sandwichListItem">pekmez</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">170</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">med</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">170</p>
 						</li>
 						<li class="menuContent">
-							<p class="sandwichListItem">orasi šećer</p>
+							<p class="sandwichListItem">orasi&nbsp;šećer</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">170</p>
 						</li>
 						<li class="menuContent">
-							<p class="sandwichListItem">euro krem</p>
+							<p class="sandwichListItem">euro&nbsp;krem</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">210</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">nutela</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">230</p>
 						</li>
 						<li class="menuContent">
-							<p class="sandwichListItem">kinder lada</p>
+							<p class="sandwichListItem">kinder&nbsp;lada</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">240</p>
 						</li>
 						<li class="menuContent">
-							<p class="sandwichListItem">milka čokolada</p>
+							<p class="sandwichListItem">milka&nbsp;čokolada</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">240</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">schogetten</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">240</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">prazna</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">90</p>
 						</li>
 					</ul>
@@ -473,70 +408,87 @@
 					<ul class="sandwichList">
 						<li class="menuContent">
 							<p class="sandwichListItem">plazma</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">20</p>
 						</li>
 						<li class="menuContent">
-							<p class="sandwichListItem">plazma u mleku</p>
+							<p class="sandwichListItem">plazma&nbsp;u&nbsp;mleku</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">40</p>
 						</li>
 						<li class="menuContent">
-							<p class="sandwichListItem">toping preliv</p>
+							<p class="sandwichListItem">toping&nbsp;preliv</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">20</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">kokos</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">20</p>
 						</li>
 						<li class="menuContent">
-							<p class="sandwichListItem">suvo grožđe</p>
+							<p class="sandwichListItem">suvo&nbsp;grožđe</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">20</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">šlag</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">20</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">kikiriki</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">20</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">lešnik</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">40</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">badem</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">40</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">orah</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">40</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">banana</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">30</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">ananas</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">40</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">višnja</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">50</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">malina</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">100</p>
 						</li>
 						<li class="menuContent">
 							<p class="sandwichListItem">jagoda</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">50</p>
 						</li>
 						<li class="menuContent">
-							<p class="sandwichListItem">voćni miks</p>
+							<p class="sandwichListItem">voćni&nbsp;miks</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">50</p>
 						</li>
 						<li class="menuContent">
-							<p class="sandwichListItem">puding vanila</p>
+							<p class="sandwichListItem">puding&nbsp;vanila</p>
+							<div class="line"></div>
 							<p class="sandwichListItem">50</p>
 						</li>
 					</ul>
@@ -545,6 +497,102 @@
 			<div class="row" id="sweetPancakeMenu">
 			</div>
 		</div>
+		<div class="headding-part text-center pb-50">
+			<h2 class="headding-sub" id="pancakeMenuAnchor">Slane Palačinke</h2>
+		</div>
+		<div class="container">
+			<div class="row  pb-50">
+				<div class="col-xl-6 col-lg-6 col-md-6 menuListContainer pb-30"
+					style="text-align: center; border-right: 2px solid #888888">
+					<h3 class="text-uppercase pb-50" style="color:#888888; font-weight: 500;">osnova</h3>
+					<ul class="sandwichList">
+						<li class="menuContent">
+							<p class="sandwichListItem">šunka</p>
+							<div class="line"></div>
+							<p class="sandwichListItem">220</p>
+						</li>
+						<li class="menuContent">
+							<p class="sandwichListItem">pileća&nbsp;prsa</p>
+							<div class="line"></div>
+							<p class="sandwichListItem">230</p>
+						</li>
+						<li class="menuContent">
+							<p class="sandwichListItem">ćureća&nbsp;prsa</p>
+							<div class="line"></div>
+							<p class="sandwichListItem">230</p>
+						</li>
+						<li class="menuContent">
+							<p class="sandwichListItem">pečenica</p>
+							<div class="line"></div>
+							<p class="sandwichListItem">240</p>
+						</li>
+						<li class="menuContent">
+							<p class="sandwichListItem">kulen</p>
+							<div class="line"></div>
+							<p class="sandwichListItem">240</p>
+						</li>
+						<li class="menuContent">
+							<p class="sandwichListItem">suvi&nbsp;vrat</p>
+							<div class="line"></div>
+							<p class="sandwichListItem">240</p>
+						</li>
+						<li class="menuContent">
+							<p class="sandwichListItem">pršuta</p>
+							<div class="line"></div>
+							<p class="sandwichListItem">250</p>
+						</li>
+						<li class="menuContent">
+							<p class="sandwichListItem">tunjevina</p>
+							<div class="line"></div>
+							<p class="sandwichListItem">220</p>
+						</li>
+						<li class="menuContent">
+							<p class="sandwichListItem">samo&nbsp;namaz</p>
+							<div class="line"></div>
+							<p class="sandwichListItem">170</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xl-6 col-lg-6 col-md-6 menuListContainer pb-30" style="text-align: center;">
+					<h3 class="text-uppercase pb-50" style="color:#888888; font-weight: 500;">dodaci</h3>
+					<ul class="sandwichList">
+						<li class="menuContent">
+							<p class="sandwichListItem">suhomesnato</p>
+							<div class="line"></div>
+							<p class="sandwichListItem">50</p>
+						</li>
+						<li class="menuContent">
+							<p class="sandwichListItem">kačkavalj</p>
+							<div class="line"></div>
+							<p class="sandwichListItem">50</p>
+						</li>
+						<li class="menuContent">
+							<p class="sandwichListItem">pršuta</p>
+							<div class="line"></div>
+							<p class="sandwichListItem">60</p>
+						</li>
+						<li class="menuContent">
+							<p class="sandwichListItem">jaje</p>
+							<div class="line"></div>
+							<p class="sandwichListItem">30</p>
+						</li>
+						<li class="menuContent">
+							<p class="sandwichListItem">kajmak</p>
+							<div class="line"></div>
+							<p class="sandwichListItem">30</p>
+						</li>
+						<li class="menuContent">
+							<p class="sandwichListItem">ajvar</p>
+							<div class="line"></div>
+							<p class="sandwichListItem">30</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row" id="pancakeMenu">
+			</div>
+		</div>
+	
 		<!--
 	<section id="meniNovi" class="special-menu ptb pt-140">
 		<div class="container">
@@ -695,9 +743,9 @@
 					</form>
 				</div>
 			</div>
-		</div>
+		</div>-->
 	</section>
--->
+
 		<section class="chef ptb pt-120 pb-120">
 			<!--<div class="chef-top-bg"><img src="images/chef-top-bg.png" alt="chef-bg"></div>-->
 			<div class="menu-top-bg"><img src="images/menu-top-bg.png" alt="meu-bg"></div>
@@ -894,6 +942,10 @@
 				</div>
 			</div>
 		</section>
+
+		<div class="widgetPhone">
+			<a href="tel:+38162221233"><i class="fa fa-phone" aria-hidden="true"></i></a>
+		</div>
 
 		<div class="top-scrolling">
 			<a href="#pageStart" class="scrollTo"><i class="fa fa-angle-up" aria-hidden="true"></i></a>

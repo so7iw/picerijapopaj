@@ -32,11 +32,11 @@
   - checkout Page
 
 * FOOTER
-*/
+
 #header.scrolled {
   background-color: #121619 !important;
   transition: background-color 200ms linear;
-}
+}*/
 /*_______________________________________________________
 // BASIC STYLE  //----------------------------
 _______________________________________________________*/
@@ -126,17 +126,18 @@ a.btn.btn-green:hover{color: #fff !important; background: rgb(253 157 62 / .7);}
 .mb-sm-20 {margin-bottom: 20px;}
 
 /*----------- Top Scrolling Style -------------*/
+.widgetPhone{position: fixed; bottom: 70px; right: 20px; z-index: 2; opacity: 0; visibility: hidden;}
 .top-scrolling {position: fixed; bottom: 20px; right: 20px; z-index: 2; opacity: 0; visibility: hidden; transition: all 400ms ease;}
-.top-scrolling.sticky{opacity: 1; visibility: visible;}
-.top-scrolling a { display: block; width: 40px; height: 40px; line-height: 40px; text-align: center; background: #e63636; border-radius: 100%; color: #fff; font-size: 30px;}
-.top-scrolling a:hover {background: #000;}
+.top-scrolling.sticky, .widgetPhone.sticky{opacity: 1; visibility: visible;}
+.top-scrolling a, .widgetPhone a { display: block; width: 40px; height: 40px; line-height: 40px; text-align: center; background: #e63636; border-radius: 100%; color: #fff; font-size: 30px;}
+.top-scrolling a:hover , .widgetPhone a:hover{background: #000;}
 
 table.border {border-color: #e5e5e5 !important;}
 
 /*_______________________________________________________
 // HEADER  //----------------------------
 _______________________________________________________*/
-header#header {position: fixed; top: 0; width: 100%; z-index: 999; padding: 15px 0;}
+header#header {position: absolute; top: 0; width: 100%; z-index: 999; padding: 15px 0;}
 .navbar-brand img{max-width: 100%;}
 .navbar-header .navbar-brand {padding: 0; margin-right: 0;}
 
@@ -165,7 +166,7 @@ li.order-online {position: relative; top: 6px;}
 .megamenu-inner-top {display: inline-block; width: 100%;}
 .megamenu .sub-menu-level1 li.level2 {float: left;}
 .megamenu .level2 > a { display: inline-block; margin-right: 35px; color: #e63636; text-transform: uppercase; font-weight: 600; margin-bottom: 10px; max-width: 100%;}
-.megamenu .sub-menu-level2 li.level3 > a {display: inline-block; padding: 4px 0; font-size: 16px;}
+.megamenu .sub-menu-level2 li.level3 > a {display: inline-block; padding: 4px 0; font-size: 16px; width:100%}
 .megamenu .sub-menu-level2 li.level3 > a:hover {color: #e63636;}
 .megamenu .sub-menu-level2 li.level3 > a span {float: left; font-size: 0; margin-right: 9px; margin-top: 11px; width: 5px; height: 5px; background: #e63636;}
 .megamenu-inner-top .left-p {padding-right: 30px;}
@@ -366,8 +367,9 @@ _______________________________________________________*/
 .online-order-form{}
 .online-booking .form-group{margin-bottom: 30px;}
 .online-booking .form-control{font-size: 14px; color: #999999; padding: 0px 25px; height: 50px; border: 1px solid #999999; border-radius: unset;}
+.form-control{box-shadow: none !important;}
+
 .online-booking .form-control:focus {border: 1px solid #e63636;}
-.form-control:active{outline:none; box-shadow: none;}
 select:focus{outline:none !important;}
 .online-booking .custom-select.sources.form-control {padding: 0; text-align: left; background: #fff;}
 .online-booking .custom-select.sources.form-control.opened {border: 1px solid #e63636;}
@@ -470,14 +472,23 @@ button.news-more {border: unset; background: transparent;}
 /*Menu Page  //----------------------------*/
 .menuContent{
   display: flex;
-  justify-content: space-between;
   overflow: hidden;
+  max-width: 600px; 
+  align-items: center;
 }
 .sandwichList{
-  width:40%;
+  max-width: 50%;
   margin: 0 auto;
 }
-
+.line {
+  border-top: 3px dotted #c5c4c4; 
+  width: 100%; 
+  margin-right: 10px; 
+  margin-left: 10px; 
+  margin-bottom: 8px;
+}
+#menuNew,#pizzaMenuAnchor,#sweetPancakeMenuAnchor,#pancakeMenuAnchor,#sandwichMenuAnchor{padding-top: 40px;}
+#scrollBehavior{scroll-behavior: smooth;}
 .page-banner{padding-top: 185px; padding-bottom: 120px;}
 .page-title{text-align: center;}
 .page-headding{font-size: 50px; color: #fff; font-weight: 700; text-transform: uppercase;}
@@ -493,11 +504,11 @@ button.news-more {border: unset; background: transparent;}
 .menu-tabbing ul li a{font-size: 14px; color: #121619; font-weight: 700; padding: 15px 28px; display: block; text-transform: uppercase;}
 .menu-tabbing ul li a.active{background: #e63636; border-radius: 50px;}
 .menu-list-box{margin-bottom: 20px;}
-.list-img img{width: 100%; object-fit: cover;}
+.list-img img, .list-img-3 img{width: 100%; object-fit: cover;}
 .menu-detail{text-align: center; padding: 20px 30px;}
 .iteam-name, .sandwichListItem{font-size: 20px; color: #121619; font-weight: 700; text-transform: uppercase; padding-bottom: 10px; letter-spacing: 1px;}
 .iteam-name:hover{color: #e63636;}
-.list-img-2 img:hover{transform: scale(1.1);}
+.list-img-2 img:hover, .list-img-3 img:hover{transform: scale(1.1);}
 .menu-detail ul li{font-size: 16px; color: #888888; display: inline-block; padding: 0px 10px; position: relative;}
 .menu-detail ul li:before{content: ""; background: #888888; position: absolute; top: 5px; width: 1px; height: 15px; left: 0; transform: rotate(20deg);}
 .menu-detail ul li:first-child:before{content: unset;}
@@ -505,7 +516,13 @@ button.news-more {border: unset; background: transparent;}
 .menu-list-box-2 .iteam-desc{height: 55px; overflow: hidden;}
 .iteam-order{font-size: 16px; color: #e63636; font-weight: 700; text-transform: uppercase; /*text-decoration: underline;TODO*/}
 .iteam-order1:hover {color: #121619; text-decoration: underline;}
-.list-img {position: relative; overflow: hidden; top: 0; transition: all 400ms ease;}
+.list-img{position: relative; overflow: hidden; top: 0; transition: all 400ms ease;}
+.list-img-3 {
+  position: relative; overflow: hidden; top: 0;
+}
+.list-img-3 img{
+  transition: all 400ms ease;
+}
 .list-img::before { position: absolute; top: 50%; left: 50%; z-index: 2; display: block; content: ''; width: 0; height: 0; background: rgba(255,255,255,.2); border-radius: 100%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); opacity: 0;}
 .list-img:hover{top: -10px;}
 .menu-list-box-2{display: flex; align-items: center; padding: 0px 20px; margin-bottom: 30px;}
