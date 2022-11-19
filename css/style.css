@@ -58,6 +58,10 @@ input{outline: none; transition: all 400ms ease; outline: none;}
 input:focus{outline: none!important; box-shadow: unset!important;}
 textarea:focus{outline: none; box-shadow: unset!important;}
 
+.display-none{
+  display: none;
+}
+
 .background-black{background-color: #000 !important; transition: 2000ms;}
 
 .container{max-width: 1230px; padding-left: 15px; padding-right: 15px; margin: 0 auto;}
