@@ -143,7 +143,7 @@ table.border {border-color: #e5e5e5 !important;}
 /*_______________________________________________________
 // HEADER  //----------------------------
 _______________________________________________________*/
-header#header {position: fixed; top: 0; width: 100%; z-index: 999; padding: 15px 0; background-color: rgba(0, 0, 0, 0.0);}
+header#header {position: fixed; top: 0; width: 100%; z-index: 999; padding: 15px 0; background-color: rgba(0, 0, 0, 0.5);}
 .navbar-brand img{max-width: 100%;}
 .navbar-header .navbar-brand {padding: 0; margin-right: 0;}
 
@@ -280,7 +280,7 @@ _______________________________________________________*/
 }
 .banner{background-color: #121619; position: relative; min-height: 110vh;display: flex;justify-content: center;
   align-items: center;}
-.banner:before{content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url(../images/list-2.jpg); background-size: cover;background-position: center; background-repeat: no-repeat; opacity: 0.5;}
+.banner:before{content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url(../images/list-2.jpg); background-size: cover;background-position: center; background-repeat: no-repeat; opacity: 1;}
 .banner .owl-item {min-height: 800px;}
 .banner-text {text-align: center; position: absolute; top: 150px; left: 50%; transform: translate(-50%); width: 100%; z-index: 1;}
 .banner-headding {font-size: 150px; color: #fefefe; text-transform: uppercase; font-weight: 700;}
