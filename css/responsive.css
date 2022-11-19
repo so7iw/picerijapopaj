@@ -306,7 +306,7 @@
 	.about-pizzon-img {margin-top: -110px; padding-left: 20px;}
 	.footer-logo .footer-des{margin: 0 auto;     padding-top: 15px;}
 	.opening-hours ul{margin: 0 auto; padding-top: 15px;}
-	.opening-hours ul li{text-align: left;}
+/* .opening-hours ul li{text-align: left;} */
 	.footer-box {flex: 0 0 100%; max-width: 100%; text-align: center; padding-top: 40px;}
 	.useful-links ul {padding-top: 15px;}
 	footer{padding-top: 50px;}
@@ -426,6 +426,8 @@
 }
 
 @media(max-width: 767px){
+	#menuNew,#pizzaMenuAnchor,#sweetPancakeMenuAnchor,#pancakeMenuAnchor,#sandwichMenuAnchor, #sweetPancakeMenuAnchorSpecial{padding-top: 90px; padding-bottom: 10px;}
+
 	.container{max-width: 100%;}
 	.ptb {padding-top: 50px; padding-bottom: 50px;}
 	.pb-50 {padding-bottom: 20px;}
@@ -435,7 +437,7 @@
 
 	header#header{padding: 10px 0;}
 	#menu{top: 60px !important;}
-	.header-right-link > ul > li > a span.icon{height: 25px; width: 25px;}
+	.header-right-link > ul > li > a span.icon{height: 25px; width: 25px;margin:0px;}
 	.header-right-link ul li.call-icon > a span.icon{background-position: -12px -91px;}
 	.header-right-link > ul > li > a .link-text {font-size: 13px; padding-left: 4px; display: none;}
 	.header-right-link > ul > li{padding: 0 10px;}
@@ -536,6 +538,7 @@
 	.about-pizzon-img {margin-top: 40px; padding-left: 0;}
 	.footer-box{padding-top: 20px;}
 	.opening-hours ul li{padding: 3px 0px;}
+	.useful-links ul li {padding: 3px 0px;}
 	.footer-logo ul li{padding: 3px 0px;}
 	.footer-logo img {max-width: 140px;}
 	footer {padding-top: 30px;}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Pizzon</title>
+	<title>Picerija Popaj</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8" />
 	<link type="image/x-icon" href="images/fav-icon.png" rel="icon">
@@ -23,11 +23,10 @@
 </head>
 <body>
 
-	<!-- Start preloader -->
+	<!-- Start preloader
 	<div id="preloader">
 		<label>Loading</label>
-	</div>
-	<!-- End preloader -->
+	</div>End preloader -->
 
 	<header id="header">
 		<div class="container">
@@ -41,6 +40,7 @@
 				</div>
 				<div class="col-xl-9 col-lg-10 col-md-8 col-9 p-0 text-right">
 					<div id="menu" class="navbar-collapse collapse">
+						
 						<ul class="nav navbar-nav">
 							<li class="level">
 								<a href="index.html" class="page-scroll">Početna</a>
@@ -53,18 +53,20 @@
 										<ul class="sub-menu-level1">
 											<li class="level2 menu-list-d">
 												<ul class="sub-menu-level2 ">
-													<li><a href="index.html#pizzaMenuAnchor">Pice</a></li>
-													<li><a href="index.html#sandwichMenuAnchor">Sendviči</a></li>
-													<li><a href="index.html#sweetPancakeMenuAnchor">Slatke&nbsp;Palačinke</a></li>
-													<li><a href="index.html#pancakeMenuAnchor">Slane&nbsp;Palačinke</a></li>
+													<li><a href="#pizzaMenuAnchor" class="scrollTo">Pice</a></li>
+													<li><a href="#sandwichMenuAnchor" class="scrollTo">Sendviči</a></li>
+													<li><a href="#sweetPancakeMenuAnchorSpecial" class="scrollTo">Original Novi Namazi</a></li>
+													<li><a href="#sweetPancakeMenuAnchor" class="scrollTo">Slatke Palačinke</a></li>
+													<li><a href="#pancakeMenuAnchor" class="scrollTo">Slane Palačinke</a></li>
 												</ul>
 											</li>
 											<li class="level2 level2 menu-list-res">
 												<ul class="sub-menu-level2 ">
-													<li class="level3"><a href="index.html#pizzaMenuAnchor" class="sideMenuCollapse"><span>■</span>Pice</a></li>
-													<li class="level3"><a href="index.html#sandwichMenuAnchor" class="sideMenuCollapse"><span>■</span>Sendviči</a></li>
-													<li class="level3"><a href="index.html#sweetPancakeMenuAnchor" class="sideMenuCollapse"><span>■</span>Slatke&nbsp;Palačinke</a></li>
-													<li class="level3"><a href="index.html#pancakeMenuAnchor" class="sideMenuCollapse"><span>■</span>Slane&nbsp;Palačinke</a></li>
+													<li class="level3 remove-background"><a href="#pizzaMenuAnchor" class="scrollTo sideMenuCollapse">Pice</a></li>
+													<li class="level3 remove-background"><a href="#sandwichMenuAnchor" class="scrollTo sideMenuCollapse">Sendviči</a></li>
+													<li class="level3 remove-background"><a href="#sweetPancakeMenuAnchorSpecial" class="scrollTo sideMenuCollapse">Original&nbsp;Novi&nbsp;Namazi</a></li>
+													<li class="level3 remove-background"><a href="#sweetPancakeMenuAnchor" class="scrollTo sideMenuCollapse">Slatke&nbsp;Palačinke</a></li>
+													<li class="level3 remove-background"><a href="#pancakeMenuAnchor" class="scrollTo sideMenuCollapse">Slane&nbsp;Palačinke</a></li>
 												</ul>
 											</li>
 										</ul>
@@ -86,10 +88,6 @@
 									<span class="icon"></span>
 									<div class="link-text">062 / 22 12 33</div>
 								</a>
-							</li>
-							<li class="order-online">
-								<a href="#" class="btn btn-green">Naručite</a>
-								<!--shop-categories.html-->
 							</li>
 							<li class="side-toggle">
 								<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle"

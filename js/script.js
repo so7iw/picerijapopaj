@@ -13,6 +13,13 @@ $(function() {
 
         $(function () {
             $(document).scroll(function () {
+              var $nav = $("#header");
+              $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+          });
+
+        $(function () {
+            $(document).scroll(function () {
               /*var $nav = $("#header");
               $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());*/
               $('.top-scrolling, .widgetPhone').toggleClass("sticky", $(this).scrollTop() > 90);
@@ -31,6 +38,11 @@ $(function() {
             /* Responsive menu */
             $(".navbar-toggle").on("click", function(){
                 $(".navbar-toggle, .header-menu").toggleClass("active");
+                $("#header").toggleClass("background-black");
+            });
+
+            $(".remove-background").on("click", function(){
+                $("#header").removeClass("background-black");
             });
 
             $(".level-1").on("click", function(){
@@ -42,10 +54,10 @@ $(function() {
                 $(".navbar-collapse").toggleClass("show");
               });
 
-            $(".set > .opener").on("click", function() {
-                if ($(this).hasClass("active")) {
-                    $(this).removeClass("active");
-                    $(this)
+              $(".set").on("click", function() {
+                if ($(".opener").hasClass("active")) {
+                    $(".opener").removeClass("active");
+                    $(".opener")
                         .siblings(".megamenu")
                         .slideUp(200);
                     $(".set > a i")
@@ -55,14 +67,14 @@ $(function() {
                 $(".set > a i")
                     .removeClass("fa-minus")
                     .addClass("fa-plus");
-                $(this)
+                $(".opener")
                     .find("i")
                     .removeClass("fa-plus")
                     .addClass("fa-minus");
                 $(".set > .opener").removeClass("active");
-                $(this).addClass("active");
+                $(".opener").addClass("active");
                 $(".megamenu").slideUp(200);
-                $(this)
+                $(".opener")
                     .siblings(".megamenu")
                     .slideDown(200);
                 }
@@ -71,7 +83,6 @@ $(function() {
             $(".set").on("click", function() {
                 if ($(this).hasClass("active")) {
                     $(this).removeClass("active");
-                    $(this)
                     $(".set")
                         .removeClass("")
                         .addClass("");
@@ -134,14 +145,8 @@ $(function() {
 					<div class="menu-list-box">
 						<div class="list-img-3"><img src="${el.img.src}" alt="${el.img.alt}"></div>
 						<div class="menu-detail">
-							<ul>`;
-                el.ingredients.forEach(ing => {
-                    output += `
-                    <li>${ing}</li>
-                    `
-                });
-                output += `
-							</ul>
+                            <a href="#" class="iteam-name"> ${el.name} </a>
+                            <p class="iteam-order">${el.price}</p>
 						</div>
 					</div>
 				</div>
@@ -370,18 +375,13 @@ $(function() {
             responsive_dropdown ();
         });*/
         $(document).ready(function(){
-            let today = new Date();
-            console.log("Loader started."+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds());
             /* -------- preloader ------- */
             $('#preloader').delay(1000).fadeOut(500);
             /*------End----------*/
-            console.log("Loader ended.");
             var pizzaMenu = document.getElementById("pizzaMenu");
-            console.log("Pizza element loaded.");
             if(pizzaMenu != null){
                 fetchData("pizza", printPizzaMenu);
             }
-            console.log("responsive dropdown triggered."+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds());
             responsive_dropdown ();
         });
 });

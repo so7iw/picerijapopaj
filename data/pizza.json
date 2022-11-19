@@ -1,35 +1,35 @@
 [
     {
         "id":1,
-        "name":"Pizza 1",
-        "ingredients":["Chicken", "Olive Oil", "Salt"],
+        "name":"Margarita",
+        "ingredients":["Pelat", "Kačkavalj"],
         "pricing":[
             {
                 "size":50,
-                "price":1090
+                "price":1050
             },
             {
-                "size":32,
-                "price":890
+                "size":35,
+                "price":650
             }
         ],
         "img":{
             "src":"images/pizza-1.jpg",
-            "alt":"Pizza 1"
+            "alt":"Margarita"
         }
     },
     {
         "id":2,
-        "name":"Pizza 2",
-        "ingredients":["Chicken", "Olive Oil", "Salt"],
+        "name":"Fungy",
+        "ingredients":["Pelat", "Kačkavalj", "Pečurke"],
         "pricing":[
             {
                 "size":50,
-                "price":1090
+                "price":1050
             },
             {
-                "size":32,
-                "price":890
+                "size":35,
+                "price":650
             }
         ],
         "img":{
@@ -39,16 +39,16 @@
     },
     {
         "id":3,
-        "name":"Pizza 3",
-        "ingredients":["Chicken", "Olive Oil", "Salt"],
+        "name":"Napolitana",
+        "ingredients":["Pelat", "Šunka", "Kačkavalj"],
         "pricing":[
             {
                 "size":50,
-                "price":1090
+                "price":1200
             },
             {
-                "size":32,
-                "price":890
+                "size":35,
+                "price":750
             }
         ],
         "img":{
@@ -58,16 +58,16 @@
     },
     {
         "id":4,
-        "name":"Pizza 4",
-        "ingredients":["Chicken", "Olive Oil", "Salt"],
+        "name":"Capricioza",
+        "ingredients":["Pelat", "Šunka", "Kačkavalj", "Pečurke"],
         "pricing":[
             {
                 "size":50,
-                "price":1090
+                "price":1210
             },
             {
-                "size":32,
-                "price":890
+                "size":35,
+                "price":750
             }
         ],
         "img":{
@@ -77,16 +77,16 @@
     },
     {
         "id":5,
-        "name":"Pizza 5",
-        "ingredients":["Chicken", "Olive Oil", "Salt"],
+        "name":"Monte Carlo",
+        "ingredients":["Pelat", "Šunka", "Kačkavalj", "Pečurke", "Jaje"],
         "pricing":[
             {
                 "size":50,
-                "price":1090
+                "price":1220
             },
             {
-                "size":32,
-                "price":890
+                "size":35,
+                "price":770
             }
         ],
         "img":{
@@ -96,21 +96,16 @@
     },
     {
         "id":6,
-        "name":"Pizza 6",
-        "ingredients":["Chicken", "Olive Oil", "Salt"],
+        "name":"Četiri Sezone",
+        "ingredients":["Pelat", "Šunka", "Kačkavalj", "Pečenica","Paprika", "Jaje"],
         "pricing":[
             {
                 "size":50,
-                "price":1090
+                "price":1250
             },
             {
-                "size":32,
-                "price":890
-            }
-            ,
-            {
-                "size":20,
-                "price":500
+                "size":35,
+                "price":800
             }
         ],
         "img":{
@@ -120,16 +115,206 @@
     },
     {
         "id":7,
-        "name":"Pizza 7",
-        "ingredients":["Chicken", "Olive Oil", "Salt"],
+        "name":"Popaj",
+        "ingredients":["Pelat", "Šunka", "Kačkavalj", "Pečurke","Slanina","Vrat","Masline","Paprika"],
         "pricing":[
             {
                 "size":50,
-                "price":1090
+                "price":1330
             },
             {
-                "size":32,
-                "price":890
+                "size":35,
+                "price":840
+            }
+        ],
+        "img":{
+            "src":"images/pizza-7.jpg",
+            "alt":"Pizza 7"
+        }
+    },
+    {
+        "id":8,
+        "name":"Mexicana",
+        "ingredients":["Pelat", "Kačkavalj", "Kulen","Šunka","Pečurke","Feferone"],
+        "pricing":[
+            {
+                "size":50,
+                "price":1330
+            },
+            {
+                "size":35,
+                "price":840
+            }
+        ],
+        "img":{
+            "src":"images/pizza-7.jpg",
+            "alt":"Pizza 7"
+        }
+    },
+    {
+        "id":9,
+        "name":"Banatska",
+        "ingredients":["Pelat", "Kačkavalj","Slanina","Jaje","Luk"],
+        "pricing":[
+            {
+                "size":50,
+                "price":1250
+            },
+            {
+                "size":35,
+                "price":800
+            }
+        ],
+        "img":{
+            "src":"images/pizza-7.jpg",
+            "alt":"Pizza 7"
+        }
+    },
+    {
+        "id":10,
+        "name":"Posna",
+        "ingredients":["Pelat", "Posni Kačkavalj", "Tunjevina","Pečurke","Masline","Luk","Paradajz"],
+        "pricing":[
+            {
+                "size":50,
+                "price":1250
+            },
+            {
+                "size":35,
+                "price":800
+            }
+        ],
+        "img":{
+            "src":"images/pizza-7.jpg",
+            "alt":"Pizza 7"
+        }
+    },
+    {
+        "id":11,
+        "name":"Prolećna",
+        "ingredients":["Pelat", "Kačkavalj", "Pečenica","Paprika","Masline","Praziluk"],
+        "pricing":[
+            {
+                "size":50,
+                "price":1280
+            },
+            {
+                "size":35,
+                "price":830
+            }
+        ],
+        "img":{
+            "src":"images/pizza-7.jpg",
+            "alt":"Pizza 7"
+        }
+    },
+    {
+        "id":12,
+        "name":"Pršut",
+        "ingredients":["Pelat", "Kačkavalj", "Pršuta","Praziluk","Paprika","Feta"],
+        "pricing":[
+            {
+                "size":50,
+                "price":1500
+            },
+            {
+                "size":35,
+                "price":950
+            }
+        ],
+        "img":{
+            "src":"images/pizza-7.jpg",
+            "alt":"Pizza 7"
+        }
+    },
+    {
+        "id":13,
+        "name":"Derbi",
+        "ingredients":["Pelat", "Kačkavalj", "Pečenica","Čeri","Crne Masline","Feta"],
+        "pricing":[
+            {
+                "size":50,
+                "price":1280
+            },
+            {
+                "size":35,
+                "price":830
+            }
+        ],
+        "img":{
+            "src":"images/pizza-7.jpg",
+            "alt":"Pizza 7"
+        }
+    },
+    {
+        "id":14,
+        "name":"Popaj Spanać",
+        "ingredients":["Spanać", "Kačkavalj", "Pečenica","Beli Luk","Jaja"],
+        "pricing":[
+            {
+                "size":50,
+                "price":1250
+            },
+            {
+                "size":35,
+                "price":800
+            }
+        ],
+        "img":{
+            "src":"images/pizza-7.jpg",
+            "alt":"Pizza 7"
+        }
+    },
+    {
+        "id":15,
+        "name":"Brokoli",
+        "ingredients":["Spanać", "Pečenica", "Kačkavalj", "Beli Luk","Brokoli","Feta"],
+        "pricing":[
+            {
+                "size":50,
+                "price":1350
+            },
+            {
+                "size":35,
+                "price":800
+            }
+        ],
+        "img":{
+            "src":"images/pizza-7.jpg",
+            "alt":"Pizza 7"
+        }
+    },
+    {
+        "id":16,
+        "name":"Oliva",
+        "ingredients":["Pelat", "Kačkavalj", "Pečenica","Kulen","Paradajz","Paprika","Luk","Masline"],
+        "pricing":[
+            {
+                "size":50,
+                "price":1400
+            },
+            {
+                "size":35,
+                "price":850
+            }
+        ],
+        "img":{
+            "src":"images/pizza-7.jpg",
+            "alt":"Pizza 7"
+        }
+    },
+    {
+        "id":17,
+        "name":"Četiri Vrste Sira",
+        "ingredients":["Kačkavalj", "Mocarela", "Gorgonzola", "Parmezan"],
+        "pricing":[
+            {
+                "size":50,
+                "price":1400
+            },
+            {
+                "size":35,
+                "price":850
             }
         ],
         "img":{

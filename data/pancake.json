@@ -1,9 +1,8 @@
 [
     {
         "id":1,
-        "ingredients":[
-            "Krem","Malina","Lešnik"
-        ],
+        "name":"Pistaći",
+        "price": 320,
         "img":{
             "src":"images/kinder-1.jpg",
             "src2":"images/kinder-2.jpg",
@@ -12,9 +11,8 @@
     },
     {
         "id":2,
-        "ingredients":[
-            "Krem","Malina","Lešnik"
-        ],
+        "name":"Kinder Bueno",
+        "price": 290,
         "img":{
             "src":"images/ferrero-1.jpg",
             "src2":"images/ferrero-2.jpg",
@@ -23,9 +21,8 @@
     },
     {
         "id":3,
-        "ingredients":[
-            "Krem","Malina","Lešnik"
-        ],
+        "name":"Kinder Bela Čokolada",
+        "price": 290,
         "img":{
             "src":"images/bueno-1.jpg",
             "src2":"images/bueno-2.jpg",
@@ -34,9 +31,8 @@
     },
     {
         "id":4,
-        "ingredients":[
-            "Krem","Malina","Lešnik"
-        ],
+        "name":"Nugat",
+        "price": 270,
         "img":{
             "src":"images/cream-1.jpg",
             "src2":"images/cream-2.jpg",
@@ -45,9 +41,8 @@
     },
     {
         "id":5,
-        "ingredients":[
-            "Krem","Malina","Lešnik"
-        ],
+        "name":"Bela Crunch",
+        "price": 290,
         "img":{
             "src":"images/whitecream-1.jpg",
             "src2":"images/whitecream-2.jpg",
@@ -56,9 +51,8 @@
     },
     {
         "id":6,
-        "ingredients":[
-            "Krem","Malina","Lešnik"
-        ],
+        "name":"Ferrero Rocher",
+        "price": 290,
         "img":{
             "src":"images/mm-1.jpg",
             "src2":"images/mm-2.jpg",
@@ -67,9 +61,8 @@
     },
     {
         "id":7,
-        "ingredients":[
-            "Krem","Malina","Lešnik"
-        ],
+        "name":"Crispy",
+        "price": 290,
         "img":{
             "src":"images/pistachio-1.jpg",
             "src2":"images/pistachio-2.jpg",
@@ -78,24 +71,12 @@
     },
     {
         "id":8,
-        "ingredients":[
-            "Krem","Malina","Lešnik"
-        ],
+        "name":"Oreo",
+        "price": 290,
         "img":{
             "src":"images/strawberry-1.jpg",
             "src2":"images/strawberry-2.jpg",
             "alt":"strawberry"
-        }
-    },
-    {
-        "id":9,
-        "ingredients":[
-            "Krem","Malina","Lešnik"
-        ],
-        "img":{
-            "src":"images/vanilla-1.jpg",
-            "src2":"images/vanilla-2.jpg",
-            "alt":"vanilla"
         }
     }
 ]
