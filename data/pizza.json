@@ -14,8 +14,8 @@
             }
         ],
         "img":{
-            "src":"images/pizza-1.jpg",
-            "alt":"Margarita"
+            "src":"images/margarita.jpg",
+            "alt":"Pizza Margarita"
         }
     },
     {
@@ -33,8 +33,8 @@
             }
         ],
         "img":{
-            "src":"images/pizza-2.jpg",
-            "alt":"Pizza 2"
+            "src":"images/fungy.jpg",
+            "alt":"Pizza Fungy"
         }
     },
     {
@@ -52,8 +52,8 @@
             }
         ],
         "img":{
-            "src":"images/pizza-3.jpg",
-            "alt":"Pizza 3"
+            "src":"images/napolitana.jpg",
+            "alt":"Pizza Napolitana"
         }
     },
     {
@@ -71,8 +71,8 @@
             }
         ],
         "img":{
-            "src":"images/pizza-4.jpg",
-            "alt":"Pizza 4"
+            "src":"images/kapricoza.jpg",
+            "alt":"Pizza Capricioza"
         }
     },
     {
@@ -90,8 +90,8 @@
             }
         ],
         "img":{
-            "src":"images/pizza-5.jpg",
-            "alt":"Pizza 5"
+            "src":"images/montekarlo.jpg",
+            "alt":"Pizza Monte Carlo"
         }
     },
     {
@@ -109,8 +109,8 @@
             }
         ],
         "img":{
-            "src":"images/pizza-6.jpg",
-            "alt":"Pizza 6"
+            "src":"images/4sezone.jpg",
+            "alt":"Pizza Četiri Sezone"
         }
     },
     {
@@ -128,8 +128,8 @@
             }
         ],
         "img":{
-            "src":"images/pizza-7.jpg",
-            "alt":"Pizza 7"
+            "src":"images/popaj.jpg",
+            "alt":"Pizza Popaj"
         }
     },
     {
@@ -147,8 +147,8 @@
             }
         ],
         "img":{
-            "src":"images/pizza-7.jpg",
-            "alt":"Pizza 7"
+            "src":"images/meksikana.jpg",
+            "alt":"Pizza Mexicana"
         }
     },
     {
@@ -166,8 +166,8 @@
             }
         ],
         "img":{
-            "src":"images/pizza-7.jpg",
-            "alt":"Pizza 7"
+            "src":"images/banatska.jpg",
+            "alt":"Pizza Banatska"
         }
     },
     {
@@ -185,8 +185,8 @@
             }
         ],
         "img":{
-            "src":"images/pizza-7.jpg",
-            "alt":"Pizza 7"
+            "src":"images/posna.jpg",
+            "alt":"Pizza Posna"
         }
     },
     {
@@ -204,8 +204,8 @@
             }
         ],
         "img":{
-            "src":"images/pizza-7.jpg",
-            "alt":"Pizza 7"
+            "src":"images/prolecna.jpg",
+            "alt":"Pizza Prolećna"
         }
     },
     {
@@ -223,8 +223,8 @@
             }
         ],
         "img":{
-            "src":"images/pizza-7.jpg",
-            "alt":"Pizza 7"
+            "src":"images/prsuta.jpg",
+            "alt":"Pizza Pršut"
         }
     },
     {
@@ -242,8 +242,8 @@
             }
         ],
         "img":{
-            "src":"images/pizza-7.jpg",
-            "alt":"Pizza 7"
+            "src":"images/derbi.jpg",
+            "alt":"Pizza Derbi"
         }
     },
     {
@@ -261,8 +261,8 @@
             }
         ],
         "img":{
-            "src":"images/pizza-7.jpg",
-            "alt":"Pizza 7"
+            "src":"images/spanac.jpg",
+            "alt":"Pizza Spanać"
         }
     },
     {
@@ -280,8 +280,8 @@
             }
         ],
         "img":{
-            "src":"images/pizza-7.jpg",
-            "alt":"Pizza 7"
+            "src":"images/brokoli.jpg",
+            "alt":"Pizza Brokoli"
         }
     },
     {
@@ -299,8 +299,8 @@
             }
         ],
         "img":{
-            "src":"images/pizza-7.jpg",
-            "alt":"Pizza 7"
+            "src":"images/oliva.jpg",
+            "alt":"Pizza Oliva"
         }
     },
     {
@@ -318,8 +318,8 @@
             }
         ],
         "img":{
-            "src":"images/pizza-7.jpg",
-            "alt":"Pizza 7"
+            "src":"images/4sira.jpg",
+            "alt":"Pizza Četiri Vrste Sira"
         }
     }
 ]

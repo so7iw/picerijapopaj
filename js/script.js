@@ -166,14 +166,6 @@ $(function() {
 						<div class="list-img"><img src="${el.img.src}" alt="${el.img.alt}"></div>
 						<div class="menu-detail">
 							<a href="#" class="iteam-name">${el.name} </a>
-							<ul>`;
-                el.ingredients.forEach(ing => {
-                    output += `
-                    <li>${ing}</li>
-                    `
-                });
-                output += `
-							</ul>
                             <p class="iteam-order">${el.price}</p>
 						</div>
 					</div>

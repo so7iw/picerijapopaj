@@ -1,62 +1,56 @@
 [
     {
         "id":1,
-        "name":"Sendvic 1",
-        "ingredients":["Chicken", "Olive Oil", "Salt"],
-        "price":250,
+        "name":"Pileća Prsa",
+        "price":220,
         "img":{
-            "src":"images/sandwich-1.jpg",
-            "alt":"Sandwich 1"
+            "src":"images/pilecaprsa.jpg",
+            "alt":"Sandwich Pileća Prsa"
         }
     },
     {
         "id":2,
-        "name":"Sendvic 2",
-        "ingredients":["Chicken", "Olive Oil", "Salt"],
-        "price":250,
+        "name":"Suvi Vrat",
+        "price":240,
         "img":{
-            "src":"images/sandwich-2.jpg",
-            "alt":"Sandwich 2"
+            "src":"images/suvivrat.jpg",
+            "alt":"Sandwich Suvi Vrat"
         }
     },
     {
         "id":3,
-        "name":"Sendvic 3",
-        "ingredients":["Chicken", "Olive Oil", "Salt"],
-        "price":250,
+        "name":"Pečenica",
+        "price":240,
         "img":{
-            "src":"images/sandwich-3.jpg",
-            "alt":"Sandwich 3"
+            "src":"images/pecenica.jpg",
+            "alt":"Sandwich Pečenica"
         }
     },
     {
         "id":4,
-        "name":"Sendvic 4",
-        "ingredients":["Chicken", "Olive Oil", "Salt"],
-        "price":250,
+        "name":"Šunka",
+        "price":210,
         "img":{
-            "src":"images/sandwich-4.jpg",
-            "alt":"Sandwich 4"
+            "src":"images/sunka.jpg",
+            "alt":"Sandwich Šunka"
         }
     },
     {
         "id":5,
-        "name":"Sendvic 5",
-        "ingredients":["Chicken", "Olive Oil", "Salt"],
-        "price":250,
+        "name":"Pršuta",
+        "price":270,
         "img":{
-            "src":"images/sandwich-5.jpg",
-            "alt":"Sandwich 5"
+            "src":"images/prsutasendvic.jpg",
+            "alt":"Sandwich Pršuta"
         }
     },
     {
         "id":6,
-        "name":"Sendvic 6",
-        "ingredients":["Chicken", "Olive Oil", "Salt"],
-        "price":250,
+        "name":"Kulen",
+        "price":240,
         "img":{
-            "src":"images/sandwich-6.jpg",
-            "alt":"Sandwich 6"
+            "src":"images/kulen.jpg",
+            "alt":"Sandwich Kulen"
         }
     }
 ]
