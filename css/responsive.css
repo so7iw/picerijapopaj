@@ -204,6 +204,9 @@
 	.information-mobile{
 		display: flex;
 	}
+	.header-right-link{
+		display: block;
+	}
 	
 
 	/* Header */

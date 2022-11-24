@@ -154,6 +154,9 @@ header#header.scrolled {
 }
 
 /* - Navigation Menu Style   //----------------- */
+.level a i{
+  margin-right: 10px;
+}
 .navbar-collapse.collapse {display: inline-block; padding-left: 0;}
 .navbar-collapse > ul {display: inline-block; float: none !important; text-align: left;}
 li.order-online {position: relative; top: 6px;}
@@ -192,9 +195,8 @@ li.order-online {position: relative; top: 6px;}
 .opener.plus {display: none;}
 
 /* megamenu end */
-.header-right-link {float: right;}
-.header-right-link > ul > li { float: left; padding: 0 10px; position: relative;
-	overflow: hidden;}
+.header-right-link {float: right; align-items: center; display:none;}
+.header-right-link > ul > li { float: left; padding: 0 10px; position: relative; overflow: hidden;}
 .header-right-link ul li:hover {overflow: visible;}
 .header-right-link ul li > a {display: inline-block; padding: 11px 0;}
 .header-right-link > ul > li > a span.icon {margin-top: 4px; background: url("../images/sprite.png") no-repeat scroll 0 0 transparent; height: 30px; width: 35px; float: left; transition: all 0.4s ease 0s; -moz-transition: all 0.4s ease 0s; -webkit-transition: all 0.4s ease 0s; -o-transition: all 0.4s ease 0s;}
