@@ -4,9 +4,8 @@
         "name":"Pistaći",
         "price": 320,
         "img":{
-            "src":"images/kinder-1.jpg",
-            "src2":"images/kinder-2.jpg",
-            "alt":"kinder"
+            "src":"images/pistaci.jpg",
+            "alt":"Pistaci"
         }
     },
     {
@@ -14,9 +13,8 @@
         "name":"Kinder Bueno",
         "price": 290,
         "img":{
-            "src":"images/ferrero-1.jpg",
-            "src2":"images/ferrero-2.jpg",
-            "alt":"ferero"
+            "src":"images/kinderbueno.jpg",
+            "alt":"kinder bueno"
         }
     },
     {
@@ -24,9 +22,8 @@
         "name":"Kinder Bela Čokolada",
         "price": 290,
         "img":{
-            "src":"images/bueno-1.jpg",
-            "src2":"images/bueno-2.jpg",
-            "alt":"bueno"
+            "src":"images/kinderbela.jpg",
+            "alt":"kinder bela cokolada"
         }
     },
     {
@@ -34,9 +31,8 @@
         "name":"Nugat",
         "price": 270,
         "img":{
-            "src":"images/cream-1.jpg",
-            "src2":"images/cream-2.jpg",
-            "alt":"cream"
+            "src":"images/nugat.jpg",
+            "alt":"nugat"
         }
     },
     {
@@ -44,9 +40,8 @@
         "name":"Bela Crunch",
         "price": 290,
         "img":{
-            "src":"images/whitecream-1.jpg",
-            "src2":"images/whitecream-2.jpg",
-            "alt":"whitecream"
+            "src":"images/belacrunch.jpg",
+            "alt":"Bela Crunch"
         }
     },
     {
@@ -54,9 +49,8 @@
         "name":"Ferrero Rocher",
         "price": 290,
         "img":{
-            "src":"images/mm-1.jpg",
-            "src2":"images/mm-2.jpg",
-            "alt":"bueno"
+            "src":"images/ferrero.jpg",
+            "alt":"Ferrero Rocher"
         }
     },
     {
@@ -64,19 +58,26 @@
         "name":"Crispy",
         "price": 290,
         "img":{
-            "src":"images/pistachio-1.jpg",
-            "src2":"images/pistachio-2.jpg",
-            "alt":"pistachio"
+            "src":"images/crispy.jpg",
+            "alt":"Crispy"
         }
     },
     {
         "id":8,
+        "name":"Karamela",
+        "price": 290,
+        "img":{
+            "src":"images/karamela.jpg",
+            "alt":"Karamela"
+        }
+    },
+    {
+        "id":9,
         "name":"Oreo",
         "price": 290,
         "img":{
-            "src":"images/strawberry-1.jpg",
-            "src2":"images/strawberry-2.jpg",
-            "alt":"strawberry"
+            "src":"images/oreo.jpg",
+            "alt":"Oreo"
         }
     }
 ]
