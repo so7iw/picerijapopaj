@@ -355,6 +355,14 @@ _______________________________________________________*/
   padding-left: 12%;
 }
 
+#ad{
+  height:450px;
+  background-image: url(../images/kolaz.jpg);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: center;
+}
+
 @keyframes scroll-up{
   0%   {top:350px;}
   100%  {top:0px;}
@@ -467,10 +475,10 @@ _______________________________________________________*/
 
 /* Site Services Features Block css Star */ 
 .order-section{background: #e63636; position: relative;}
-.order-section .order-img{max-width: 90px;     transition: all 400ms ease;}
-.order-section .col-xl-4:hover .order-img {filter: invert(1) sepia(0) saturate(0) hue-rotate(175deg);}
-.order-section .order-title{text-align:center; font-size: 30px; font-weight: 700; color: #121619; padding-top: 10px; padding-bottom: 8px;}
-.order-section .order-des{font-size: 14px; color: #121619;}
+.order-section .order-img{max-width: 90px;     transition: all 400ms ease; filter: invert(1) sepia(0) saturate(0) hue-rotate(175deg);}
+/* .order-section .col-xl-4:hover .order-img {} */
+.order-section .order-title{text-align:center; font-size: 30px; font-weight: 700; color: #fff; padding-top: 10px; padding-bottom: 8px;}
+.order-section .order-des{font-size: 14px; color: #fff;}
 .order-top{position: absolute; top: -90px; left: 0; width: 100%; z-index: 1;}
 .order-top img{width: 100%; max-width: 100%;}
 .order-bottom{position: absolute; bottom: -95px; left: 0; width: 100%;}
@@ -1060,7 +1068,7 @@ footer{background: #121619; padding-top: 100px;}
 .footer-box{text-align: center;}
 .footer-logo .footer-des{font-size: 14px; color: #fff; max-width: 240px; padding-top: 35px; padding-bottom: 10px;}
 .footer-logo ul li{font-size: 14px; color: #fff; padding: 10px 0px; text-transform: uppercase;}
-.footer-logo ul li a{font-size: 14px; color: #fff; padding-left: 5px; text-transform: lowercase}
+.footer-logo ul li a{font-size: 14px; color: #fff; padding-left: 5px; text-transform: uppercase}
 .footer-logo ul li a:hover{color: #e63636;}
 .footer h2{font-size: 20px; color: #fff; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; padding-top: 11px;}
 .opening-hours ul{padding-top: 50px;}

@@ -766,6 +766,10 @@
 
 @media(max-width: 480px){
 
+	#ad{
+		height:220px;
+	  }
+
 	.pt-100 {padding-top: 30px;}
 
 	.order-section .order-img {max-width: 70px;}

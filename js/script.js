@@ -366,9 +366,47 @@ $(function() {
             console.log("document ready triggered."+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds());
             responsive_dropdown ();
         });*/
+
+        function cycleBackground() {
+            var rotator = document.getElementById('pageStart').style.backgroundImage; 
+            var imageDir = '../images/';                          
+            var delayInSeconds = 1;                            
+        
+            var images = ['list-2.jpg', 'list-3.jpg'];
+        
+            var num = 0;
+            var changeImage = function() {
+                var len = images.length;
+                console.log(rotator);
+                console.log(num);
+                console.log(len);
+                console.log(imageDir);
+                console.log(images[num]);
+                rotator = "url('" + imageDir + images[num++] + "')";
+                if (num == len) {
+                    num = 0;
+                }
+            };
+            setInterval(changeImage, delayInSeconds * 2000);
+        };
+
+//         var images = ['../images/list-2.jpg', '../images/list-3.jpg'],
+//     index  = 0,
+//     $top   = $('#pageStart');
+
+// setInterval(function() {
+//     console.log($top);
+//    $top.animate({ opacity: 0 }, 500, function() {
+//      $top.css('background-image', 'url(' + images[++index]+ ')' +'!important');
+//      $top.animate({ opacity: 1 }, 500, function() {
+//        if(index === images.length) index = 0;
+//      });
+//    });
+// }, 6000);
+
         $(document).ready(function(){
             /* -------- preloader ------- */
-            $('#preloader').delay(1000).fadeOut(500);
+            // $('#preloader').delay(1000).fadeOut(500);
             /*------End----------*/
             var pizzaMenu = document.getElementById("pizzaMenu");
             if(pizzaMenu != null){
