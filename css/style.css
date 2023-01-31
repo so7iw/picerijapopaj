@@ -822,7 +822,7 @@ blockquote p {font-size: 20px !important; color: #121619 !important; max-width: 
 .experience .modal-content {background: transparent; border: unset; position: relative;}
 .experience button.close {position: absolute; right: -10px; top: -15px; color: #fff; opacity: 1; font-size: 30px; z-index: 2;}
 .experience button.close:hover{color: #e63636;}
-.experience .video-play {height: 300px;}
+.experience .video-play {height: 290px;}
 .about-cus{position: relative;}
 .about-cus:before {content: ""; background-image: url(../images/chef-bg.png); background-position: center; background-repeat: no-repeat; background-size: cover; opacity: .20; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 /* about Page End /
