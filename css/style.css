@@ -809,11 +809,11 @@ blockquote p {font-size: 20px !important; color: #121619 !important; max-width: 
 /* about Page  //----------------------------*/
 .flex-center{align-items: center;}
 .about-img{position: relative;}
-.about-img.overlay:before {content: "";position: absolute;width: 100%;height: 100%;top: 0;left: 0;background: rgb(0, 0, 0, .7); opacity: 0; transition: all 400ms ease;}
+.about-img.overlay:before {content: "";position: absolute;width: 100%;height: 100%;top: 0;left: 0;}
 .about-img.overlay:hover:before{opacity: 1;}
 .about-img.overlay {position: relative;}
 .about-img img{width: 100%; object-fit: cover;}
-.about-img iframe {width:100%;}
+.about-img iframe {width:100%; height: 300px;}
 .about-text{padding-left: 15px;}
 .about-desc{padding-top: 25px;}
 .desc-about{font-size: 18px; color: #121619; padding-bottom: 20px;}
