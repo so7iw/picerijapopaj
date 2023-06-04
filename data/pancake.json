@@ -64,20 +64,11 @@
     },
     {
         "id":8,
-        "name":"Karamela",
+        "name":"Oreo",
         "price": 290,
         "img":{
             "src":"images/karamela.jpg",
             "alt":"Karamela"
-        }
-    },
-    {
-        "id":9,
-        "name":"Oreo",
-        "price": 290,
-        "img":{
-            "src":"images/oreo.jpg",
-            "alt":"Oreo"
         }
     }
 ]

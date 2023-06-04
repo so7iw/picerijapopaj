@@ -443,7 +443,7 @@
 	.mb-md-30 {margin-bottom: 30px;}
 
 	.banner:before{
-		background-image: url(../images/mobile-banner-bg.jpg);
+		background-image: url(../images/crnomobile.jpg);
 	}
 	.banner{
 		height: 800px;
@@ -476,7 +476,7 @@
 	.pb-r-30{padding-bottom: 30px;}
 
 	header#header{padding: 10px 10px;}
-	#menu{top: 60px !important;}
+	#menu{top: 64px !important;}
 	.header-right-link > ul > li > a span.icon{height: 25px; width: 25px;margin:0px;}
 	.header-right-link ul li.call-icon > a span.icon{background-position: -12px -91px;}
 	.header-right-link > ul > li > a .link-text {font-size: 13px; padding-left: 4px; display: none;}
@@ -772,7 +772,8 @@
 
 	.pt-100 {padding-top: 30px;}
 
-	.order-section .order-img {max-width: 70px;}
+	.order-section .order-img {max-width: 50px;}
+	.order-section .order-img-car {max-width: 130px; padding-top: 0px; text-align: center;}
 	.order-section .order-title {font-size: 15px !important;}
 
 	.header-right-link > ul > li {padding: 0 5px;}
