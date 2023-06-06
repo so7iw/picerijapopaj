@@ -860,14 +860,14 @@ blockquote p {font-size: 20px !important; color: #121619 !important; max-width: 
 	/* width: 0.1px;
 	height: 0.1px; */
 	opacity: 1;
-	overflow: hidden;
+	overflow: show;
 	position: absolute;
 	z-index: 0;
   margin-top: 10px;
   margin-left: 11px;
 }
 .inputfile + label {
-  font-size: 14px; position: relative; text-align: center; background-color: #fff; color: #999999; padding: 15px 25px; height: 50px; border: 1px solid #999999; border-radius: unset; z-index: 999;
+  font-size: 14px; position: relative; background-color: #fff; color: #999999; padding: 15px 25px; height: 50px; border: 1px solid #999999; border-radius: unset; z-index: 999;
 }
 
 /* Contact Page End */

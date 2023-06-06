@@ -466,15 +466,16 @@
 @media(max-width: 767px){
 	#menuNew,#pizzaMenuAnchor,#sweetPancakeMenuAnchor,#pancakeMenuAnchor,#sandwichMenuAnchor, #sweetPancakeMenuAnchorSpecial{padding-top: 90px; padding-bottom: 10px;}
 
-	
+	.contact-in .leave .form-group {
+		text-align: left;
+	}
 
 	.inputfile{
-		margin-top: 4px;
+		margin-top: 5px;
 	}
 	.inputfile + label {
 		width: 91px;
 		text-align: center;
-		
 	}
 	.container{max-width: 100%;}
 	.ptb {padding-top: 50px; padding-bottom: 50px;}
