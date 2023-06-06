@@ -468,6 +468,14 @@
 
 	
 
+	.inputfile{
+		margin-top: 4px;
+	}
+	.inputfile + label {
+		width: 91px;
+		text-align: center;
+		
+	}
 	.container{max-width: 100%;}
 	.ptb {padding-top: 50px; padding-bottom: 50px;}
 	.pb-50 {padding-bottom: 20px;}
