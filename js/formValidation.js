@@ -4,7 +4,6 @@ function validateAndSendForm() {
   var validationResult = validateForm(form);
 
   if (validationResult) {
-    console.log("Validation clear, sending email...");
 
     const formData = new FormData(form);
 
@@ -16,13 +15,11 @@ function validateAndSendForm() {
       processData: false,
       contentType: false,
       success: function (response) {
-        console.log('Form submitted successfully.');
         document.getElementById("mailSuccessMsg").style.display = "block";
         form.reset();
         $('#selected_filename').text("Datoteka nije odabrana");
       },
       error: function (xhr, status, error) {
-        console.log('An error occurred while submitting the form.');
         document.getElementById("mailFailureMsg").style.display = "block";
         form.reset();
         $('#selected_filename').text("Datoteka nije odabrana");

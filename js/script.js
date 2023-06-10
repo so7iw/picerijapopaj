@@ -18,8 +18,6 @@ $(function () {
 
     $(function () {
         $(document).scroll(function () {
-            /*var $nav = $("#header");
-            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());*/
             $('.top-scrolling, .widgetPhone').toggleClass("sticky", $(this).scrollTop() > 90);
         });
     });
@@ -115,8 +113,6 @@ $(function () {
                 `;
         });
         document.getElementById('sweetPancakeMenu').innerHTML = output;
-
-        console.log("sweetPancake print done.");
     }
 
     function printSandwichMenu(json) {
@@ -135,8 +131,6 @@ $(function () {
                 `;
         });
         document.getElementById('sandwichMenu').innerHTML = output;
-
-        console.log("Sandwich print done.");
 
         fetchData("pancake", printPancakeMenu);
     }
@@ -170,8 +164,6 @@ $(function () {
                 `;
         });
         document.getElementById('pizzaMenu').innerHTML = output;
-
-        console.log("Pizza print done.");
 
         fetchData("sandwich", printSandwichMenu);
     }
