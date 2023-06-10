@@ -201,9 +201,9 @@ li.order-online {position: relative; top: 6px;}
 .header-right-link {float: right; align-items: center; display:none;}
 .header-right-link > ul > li { float: left; padding: 0 10px; position: relative; overflow: hidden;}
 .header-right-link ul li:hover {overflow: visible;}
-.header-right-link ul li > a {display: inline-block; padding: 11px 0;}
+.header-right-link ul li > a {display: flex; align-items: center;}
 .header-right-link > ul > li > a span.icon {margin-top: 4px; background: url("../images/sprite.png") no-repeat scroll 0 0 transparent; height: 30px; width: 35px; float: left; transition: all 0.4s ease 0s; -moz-transition: all 0.4s ease 0s; -webkit-transition: all 0.4s ease 0s; -o-transition: all 0.4s ease 0s;}
-.header-right-link > ul > li > a .link-text { display: inline-block; margin-top: 4px; font-size: 20px; color: #fff;}
+.header-right-link > ul > li > a .link-text { display: inline-block; font-size: 20px; color: #fff;}
 .header-right-link ul li.cart-icon > a span.icon {background-position: -9px -14px; position: relative;}
 .header-right-link ul li.call-icon > a span.icon {background-position: -9px -89px; position: relative;}
 .header-right-link ul li.call-icon:hover > a span.icon {background-position: -9px -122px;}
@@ -266,15 +266,14 @@ _______________________________________________________*/
 }
 
 .title-orientation, .information-mobile{
-  background-color: rgba(0, 0, 0, 0.3);
   color: #fff; 
   font-weight: 600;
-
   transition: all 800ms ease;
 }
 
 .information-mobile{
-  height: 350px;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 410px;
   margin-top: auto;
   width:100%;
   display: none;
@@ -286,11 +285,14 @@ _______________________________________________________*/
         animation: scroll-up 2s forwards;
 }
 .title-orientation{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  background-color: rgba(0, 0, 0, 0);
   height:110vh;
   width:100%;
-  font-size: 30px;
+  font-size: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -301,7 +303,7 @@ _______________________________________________________*/
 }
 
 .title-orientation:hover{
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .title-orientation ul li a:hover{
@@ -323,7 +325,7 @@ _______________________________________________________*/
 }
 
 .title-orientation ul li a{
-  font-size: 30px;
+  font-size: 20px;
 }
 .information-mobile ul li a{
   font-size: 15px;
@@ -344,6 +346,9 @@ _______________________________________________________*/
 }
 .margin-top-30{
   margin-top: 30px;
+}
+.margin-bottom-10{
+  margin-bottom: 10px;
 }
 .margin-bottom-20{
   margin-bottom: 20px;
@@ -399,6 +404,7 @@ _______________________________________________________*/
 }
 
 .banner-row{
+  padding-left: 5%;
   width: 100%;
   height: 100%;
 }
@@ -530,8 +536,7 @@ _______________________________________________________*/
 .max-w-390{max-width: 400px;}
 .online-call:hover:before{opacity: 1;}
 .book-table{font-size: 30px; color: #121619; font-weight: 700; letter-spacing: 2px; padding-bottom: 20px;}
-.online-order-form{}
-.online-booking .form-group{margin-bottom: 30px;}
+.online-booking .form-group{margin-bottom: 0px;}
 .online-booking .form-control{font-size: 14px; color: #999999; padding: 0px 25px; height: 50px; border: 1px solid #999999; border-radius: unset;}
 .form-control{box-shadow: none !important;}
 
@@ -783,18 +788,18 @@ blockquote p {font-size: 20px !important; color: #121619 !important; max-width: 
 .reply-com:hover {background: transparent; color: #e63636;}
 .comments {padding-bottom: 10px;}
 
-.leave{}
 .leave .title-com{padding-bottom: 15px;}
 .leave .form-group{margin-bottom: 20px;}
-.leave .form-control{font-size: 14px; color: #999999; letter-spacing: 1px; padding: 20px 25px; height: 60px; border-radius: 0;}
+.leave .form-control{font-size: 14px; color: #000; letter-spacing: 1px; padding: 20px 25px; height: 60px; border-radius: 0;}
 .leave .form-control:focus{border: 1px solid #000;}
 .leave textarea.form-control{height: 200px; resize: unset;}
 .post-com { background: #e63636; color: #fff; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; border: 1px solid #e63636; border-radius: 50px; padding: 17px 35px;}
 .post-com:hover{background: transparent; color: #e63636;}
 .blog-detail .blog-box {padding-bottom: 0;}
 /*Blog Page End */
-
-/*Reservation Page  //----------------------------*/
+.form-control{color:#000 !important;}
+/* 
+/*Reservation Page  //----------------------------
 .reservation{position: relative; background: url(../images/table-book.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;}
 .reservation .container{position: relative; z-index: 2;}
 .reservation form{padding-top: 70px; padding-bottom: 100px; }
@@ -804,7 +809,8 @@ blockquote p {font-size: 20px !important; color: #121619 !important; max-width: 
 .reservation .custom-options{border-radius: 30px; background: #fff;}
 .table-book {font-size: 24px; color: #fff; background: #e63636; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; border: 1px solid #e63636; padding: 11px 170px; border-radius: 50px;}
 .table-book:hover {background: transparent; color: #e63636;}
-/*Reservation Page End */
+Reservation Page End */
+
 
 /* about Page  //----------------------------*/
 .flex-center{align-items: center;}
@@ -842,13 +848,36 @@ blockquote p {font-size: 20px !important; color: #121619 !important; max-width: 
 .contact-detail ul li a{font-size: 14px; color: #121619; margin-left: 15px;}
 .contact-detail ul li a span{display: block;}
 .contact-detail ul li a:hover{color: #e63636;}
-.contact-in .leave .form-group {margin-bottom: 30px;}
+.contact-in .leave .form-group {margin-bottom: 10px;}
+.form-group span{height:30px; padding: 15px;}
 .contact-in .post-com {border-radius: 0; width: 100%;}
 .map-pizzon {width: 100%; height: 435px; display: block;}
-.contact-in .leave {padding-left: 70px;}
 
+.error{
+  font-size: 14px;
+  color: red;
+}
+
+#fileError{
+  margin-bottom: 20px;
+}
+
+#mailSuccessMsg, #mailFailureMsg{
+  display:none; 
+  position:fixed; 
+  z-index: 1000; 
+  top:9em; 
+  right:3em; 
+  font-size:18px;
+}
+
+.animated {
+  -webkit-animation-duration: 10s;animation-duration: 10s;
+}
+
+.form-control-file-custom{ width: 100%;}
 .inputfile + label {
-	cursor: pointer; /* "hand" cursor */
+	cursor: pointer;
 }
 .file {
   position:relative;
@@ -857,17 +886,15 @@ blockquote p {font-size: 20px !important; color: #121619 !important; max-width: 
   margin:0px 10px 0px 0px !important;
 }
 .inputfile {
-	/* width: 0.1px;
-	height: 0.1px; */
-	opacity: 1;
-	overflow: show;
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
 	position: absolute;
 	z-index: 0;
-  margin-top: 10px;
-  margin-left: 11px;
 }
 .inputfile + label {
-  font-size: 14px; position: relative; background-color: #fff; color: #999999; padding: 15px 25px; height: 50px; border: 1px solid #999999; border-radius: unset; z-index: 999;
+  font-size: 14px; position: relative; background-color: #fff; color: #000; padding: 15px 25px; height: 50px; border: 1px solid #ced4da; border-radius: unset; z-index: 100;
 }
 
 /* Contact Page End */
@@ -929,7 +956,7 @@ body {
   background: transparent;
   position: absolute;
   right: 0;
-  z-index: 1000;
+  z-index: 1005;
 }
 
 /* Handle */

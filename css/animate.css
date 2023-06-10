@@ -1659,11 +1659,13 @@
 
   to {
     opacity: 0;
+    -webkit-animation-duration: 10s;
   }
 }
 
 .fadeOut {
   -webkit-animation-name: fadeOut;
+  
   animation-name: fadeOut;
 }
 

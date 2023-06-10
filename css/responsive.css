@@ -1,9 +1,24 @@
+@media(max-width: 2560px){
+	.title-orientation{
+		font-size: 30px;
+	}
+	.title-orientation ul li a{
+		font-size: 30px;
+	}
+}
+
 @media(max-width: 1900px){
 	.menu-top-bg {top: -70px;}
 	.menu-bottom-bg {bottom: -130px;}
 	.chef-top-bg {top: -350px;}
 	.chef-bottom-bg {bottom: -350px;}
 	.customer-top-bg {position: absolute; top: -70px;}
+	.title-orientation{
+		font-size: 20px;
+	}
+	.title-orientation ul li a{
+		font-size: 20px;
+	}
 }
 
 @media(max-width: 1800px){
@@ -230,7 +245,7 @@
 	#header .nav > li:first-child ul li.level2 a {padding-left: 0;}
 	.navbar-nav > li.dropdown > a:after {display: none;}
 	#menu .level {position: relative;}
-	#menu span.opener {color: #fff; height: 25px;width: 25px;display: inline-block;position: absolute;right: 0;cursor: pointer;z-index: 1; transition: all 400ms ease;  top: 15px;     z-index: 1;}
+	#menu span.opener {color: #fff; height: 25px;width: 25px;display: inline-block;position: absolute;right: 5px;cursor: pointer;z-index: 1; transition: all 400ms ease;  top: 19px;     z-index: 1;}
 	#menu span.plus {background-position: -94px -378px;}
 	#menu span.minus {background-position: -94px -416px;}
 	.megamenu .level2 > a {position: relative; margin-bottom: 2px; margin-right: 0;}
@@ -250,8 +265,8 @@
 	.megamenu .sub-menu-level2 li.level3 > a:hover {color: #000;}
 	button.navbar-toggle i.fa {font-size: 24px; color: #fff;}
 	button:focus {outline: none;}
-	#menu span.plus:before{content: ""; position: absolute; width: 20px; height: 2px; background: #fff; top: 8px; left: -9px;}
-	#menu span.plus:after{content: ""; position: absolute; width: 2px; height: 20px; top: 0; left: 0; background: #fff; transition: all 400ms ease;}
+	#menu span.plus:before{content: ""; position: absolute; width: 21px; height: 2px; background: #fff; top: 10px; left: -9px;}
+	#menu span.plus:after{content: ""; position: absolute; width: 2px; height: 21px; top: 0; left: 0; background: #fff; transition: all 400ms ease;}
 	#menu .active span.plus:after{transform: rotate(90deg);}
 	.menu-list-d {display: none;}
 	.cart-dropdown.header-link-dropdown.active {opacity: 1; display: block;}
@@ -443,7 +458,7 @@
 	.mb-md-30 {margin-bottom: 30px;}
 
 	.banner:before{
-		background-image: url(../images/crnomobile.jpg);
+		background-image: url(../images/crnotablet.jpg);
 	}
 	.banner{
 		height: 800px;
@@ -461,21 +476,19 @@
 		display: block;
 	}
 
+	.about-img iframe{
+		height: 200px;
+	}
+
 }
 
 @media(max-width: 767px){
 	#menuNew,#pizzaMenuAnchor,#sweetPancakeMenuAnchor,#pancakeMenuAnchor,#sandwichMenuAnchor, #sweetPancakeMenuAnchorSpecial{padding-top: 90px; padding-bottom: 10px;}
 
-	.contact-in .leave .form-group {
-		text-align: left;
-	}
+	
 
-	.inputfile{
-		margin-top: 5px;
-	}
-	.inputfile + label {
-		width: 91px;
-		text-align: center;
+	.banner:before{
+		background-image: url(../images/crnomobile.jpg);
 	}
 	.container{max-width: 100%;}
 	.ptb {padding-top: 50px; padding-bottom: 50px;}
@@ -658,11 +671,11 @@
 	.details-com {width: 100%; float: unset;}
 	.button-comme {width: 100%; float: unset; text-align: unset; margin-top: 15px;}
 	.leave .form-control{padding: 10px 10px; height: 40px;}
-	.inputfile + label{padding:7px 10px; height:40px;}
+	.inputfile + label{padding:10px 10px; height:40px;}
 	.leave textarea.form-control {height: 150px;}
 	.leave .form-group {margin-bottom: 10px;}
 	.post-com{padding: 10px 15px;}
-	.leave {text-align: center;}
+	.leave {text-align: left;}
 	.blog-detail {padding-bottom: 50px;}
 	.blog-detail ol li:first-child {display: block;}
 	.blog-detail ol {width: 100%; float: unset; display: block; width: 100%; text-align: center;}
@@ -694,6 +707,8 @@
 	.contact-detail ul li{font-size: 20px;}
 	.contact-in .leave .form-group {margin-bottom: 10px;}
 	.map-pizzon {height: 250px;}
+
+
 
 	/*_______________________________________________________
 		// shop categories Page  //----------------------------
@@ -854,5 +869,10 @@
 
 	.contact.ptb {padding-top: 30px; padding-bottom: 30px;}
 	.releted-product {padding-bottom: 30px;}
+
+	#mailSuccessMsg, #mailFailureMsg{
+		right:1em; 
+		font-size:12px;
+	  }
 
 }
