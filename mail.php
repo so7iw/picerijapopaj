@@ -25,7 +25,8 @@
 	$mail->Port = 587;                                    // TCP port to connect to
 
 	$mail->setFrom(EMAIL, 'Picerija Popaj');
-	$mail->addAddress('picerija.popaj.no.reply@gmail.com');     // Add a recipient
+	$mail->addAddress('stojanovski.milos2@gmail.com');     // Add a recipient
+	$mail->addBcc("picerija.popaj.no.reply@gmail.com");
 
 	$mail->addAttachment($_FILES['file']['tmp_name'], $_FILES['file']['name']);
 			
