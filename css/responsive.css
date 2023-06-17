@@ -5,6 +5,12 @@
 	.title-orientation ul li a{
 		font-size: 30px;
 	}
+	.hide-mobile-addons{
+		display: block;
+	}
+	.show-mobile-addons{
+		display: none;
+	}
 }
 
 @media(max-width: 1900px){
@@ -480,12 +486,27 @@
 		height: 200px;
 	}
 
+	.information-mobile{
+		padding:35px 220px;
+	}
+	
+
+	span.working-hours-open {padding: 2px 14px;}
 }
 
 @media(max-width: 767px){
 	#menuNew,#pizzaMenuAnchor,#sweetPancakeMenuAnchor,#pancakeMenuAnchor,#sandwichMenuAnchor, #sweetPancakeMenuAnchorSpecial{padding-top: 90px; padding-bottom: 10px;}
 
-	
+	.information-mobile{
+		padding:35px;
+	}
+
+	.hide-mobile-addons{
+		display: none;
+	}
+	.show-mobile-addons{
+		display: block;
+	}
 
 	.banner:before{
 		background-image: url(../images/crnomobile.jpg);
@@ -498,7 +519,7 @@
 	.pb-r-30{padding-bottom: 30px;}
 
 	header#header{padding: 10px 10px;}
-	#menu{top: 64px !important;}
+	#menu{top: 63px !important;}
 	.header-right-link > ul > li > a span.icon{height: 25px; width: 25px;margin:0px;}
 	.header-right-link ul li.call-icon > a span.icon{background-position: -12px -91px;}
 	.header-right-link > ul > li > a .link-text {font-size: 13px; padding-left: 4px; display: none;}
