@@ -6,7 +6,7 @@
 
       <loc>https://www.picerijapopaj.com/</loc>
 
-      <lastmod>2023-06-18</lastmod>
+      <lastmod>2023-06-28</lastmod>
 
       <changefreq>monthly</changefreq>
 
@@ -35,16 +35,4 @@
       <priority>0.6</priority>
 
    </url>
-   <url>
-
-      <loc>https://www.picerijapopaj.com/404.html</loc>
-
-      <lastmod>2023-06-10</lastmod>
-
-      <changefreq>yearly</changefreq>
-
-      <priority>0.2</priority>
-
-   </url>
-
 </urlset> 
