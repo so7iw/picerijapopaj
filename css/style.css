@@ -1118,7 +1118,7 @@ footer{background: #121619; padding-top: 100px;}
 .opening-hours ul li{font-size: 14px; color: #fff; padding: 10px 0px; letter-spacing: 1px;}
 .padding50{padding-bottom: 35px;}
 span.footer-close {background: #e63636; padding: 2px 16px;}
-span.working-hours-closed {border:3px solid #e63636; padding: 2px 12px;} /*width:40%; TODO*/
+span.working-hours-closed {border:3px solid #e63636; padding: 2px 12px; width:40%;}
 span.working-hours-open {border:3px solid #4f9946; padding: 2px 16px;}
 .font-30{font-size: 30px;}
 .font-22{font-size: 22px;}
