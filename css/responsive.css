@@ -492,10 +492,16 @@
 	
 
 	span.working-hours-open {padding: 2px 14px;}
+
+	.underline{border-left:3px solid #fff;padding:0px 4px;}
+.underline-red{border-left:3px solid #e63636;padding:0px 4px;}
+.working-hours-underline li{padding-left: 2px;}
 }
 
 @media(max-width: 767px){
 	#menuNew,#pizzaMenuAnchor,#sweetPancakeMenuAnchor,#pancakeMenuAnchor,#sandwichMenuAnchor, #sweetPancakeMenuAnchorSpecial{padding-top: 90px; padding-bottom: 10px;}
+
+	
 
 	.information-mobile{
 		padding:35px;

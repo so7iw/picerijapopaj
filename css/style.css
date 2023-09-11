@@ -273,7 +273,7 @@ _______________________________________________________*/
 
 .information-mobile{
   background-color: rgba(0, 0, 0, 0.3);
-  height: 420px;
+  height: 410px;
   margin-top: auto;
   width:100%;
   display: none;
@@ -1159,3 +1159,6 @@ span.working-hours-open {border:3px solid #4f9946; padding: 2px 16px;}
 .comment-part {text-align: left;}
 .border-tab ul li a:before {content: ""; transition: all 400ms ease; position: absolute; bottom: 0; left: 0; background: #000; width: 0%; height: 2px;}
 .border-tab ul li.current a:before{width: 100%;}
+.underline{border-left:5px solid #fff;padding:0px 4px;}
+.underline-red{border-left:5px solid #e63636;padding:0px 4px;}
+.working-hours-underline li{padding-left: 8px;}
