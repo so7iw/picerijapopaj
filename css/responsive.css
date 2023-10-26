@@ -518,7 +518,7 @@
 		background-image: url(../images/crnomobile.jpg);
 	}
 	.container{max-width: 100%;}
-	.ptb {padding-top: 50px; padding-bottom: 50px;}
+	.ptb {padding-top: 30px; padding-bottom: 20px;}
 	.pb-50 {padding-bottom: 20px;}
 	.pt-50 {padding-top: 10px;}
 	.pt-100 {padding-top: 50px;}
