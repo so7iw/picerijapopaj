@@ -2,7 +2,7 @@
     {
         "id":1,
         "name":"Pistaći",
-        "price": 320,
+        "price": 350,
         "img":{
             "src":"images/pistaci.jpg",
             "alt":"Pistaci"
@@ -11,7 +11,7 @@
     {
         "id":2,
         "name":"Kinder Bueno",
-        "price": 290,
+        "price": 320,
         "img":{
             "src":"images/kinderbueno.jpg",
             "alt":"kinder bueno"
@@ -20,7 +20,7 @@
     {
         "id":3,
         "name":"Kinder Bela Čokolada",
-        "price": 290,
+        "price": 320,
         "img":{
             "src":"images/kinderbela.jpg",
             "alt":"kinder bela cokolada"
@@ -29,7 +29,7 @@
     {
         "id":4,
         "name":"Nugat",
-        "price": 270,
+        "price": 300,
         "img":{
             "src":"images/nugat.jpg",
             "alt":"nugat"
@@ -38,7 +38,7 @@
     {
         "id":5,
         "name":"Bela Crunch",
-        "price": 290,
+        "price": 320,
         "img":{
             "src":"images/belacrunch.jpg",
             "alt":"Bela Crunch"
@@ -47,7 +47,7 @@
     {
         "id":6,
         "name":"Ferrero Rocher",
-        "price": 290,
+        "price": 320,
         "img":{
             "src":"images/ferrero.jpg",
             "alt":"Ferrero Rocher"
@@ -56,7 +56,7 @@
     {
         "id":7,
         "name":"Crispy",
-        "price": 290,
+        "price": 320,
         "img":{
             "src":"images/crispy.jpg",
             "alt":"Crispy"
@@ -65,7 +65,7 @@
     {
         "id":8,
         "name":"Oreo",
-        "price": 290,
+        "price": 320,
         "img":{
             "src":"images/karamela.jpg",
             "alt":"Karamela"
