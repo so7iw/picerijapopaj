@@ -501,7 +501,11 @@
 @media(max-width: 767px){
 	#menuNew,#pizzaMenuAnchor,#sweetPancakeMenuAnchor,#pancakeMenuAnchor,#sandwichMenuAnchor, #sweetPancakeMenuAnchorSpecial{padding-top: 90px; padding-bottom: 10px;}
 
-	
+	#working-time-info{
+		font-size: 18px;
+		right:5%;
+		width: 90%;
+	}
 
 	.information-mobile{
 		padding:35px;

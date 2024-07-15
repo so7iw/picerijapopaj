@@ -34,9 +34,23 @@
 
 		gtag('config', 'G-R2S2FL7PYW');
 	</script>
+	<script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                var element = document.getElementById('working-time-info');
+                element.classList.add('visible');
+            }, 200); // 1000 milliseconds = 1 second
+        });
+    </script>
 </head>
 
 <body>
+	  <div id="working-time-info" class="alert alert-danger alert-dismissible fade show hidden" role="alert">
+		Dragi kupci, zbog godišnjih odmora radno vreme lokala je promenjeno u periodu 15.7. - 29.7. <br> Molimo Vas proverite kako radimo prilikom pozivanja. Hvala!
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		  <span aria-hidden="true" style="font-size:35px;">&times;</span>
+		</button>
+	  </div>
 	<header id="header">
 		<div class="container small-margin">
 			<div class="row m-0">
@@ -102,17 +116,16 @@
 								<a href="contact.html" class="page-scroll">Poslovi</a>
 							</li>
 							<li class="level">
-								<a href="tel:+38162221233"><i class="fa fa-phone" aria-hidden="true"></i>062 / 22 12
-									33</a>
+								<a href="tel:+38113312647"><i class="fa fa-phone" aria-hidden="true"></i>013 / 312 647</a>
 							</li>
 						</ul>
 					</div>
 					<div class=" header-right-link">
 						<ul>
 							<li class="call-icon">
-								<a href="tel:+38162221233">
+								<a href="tel:+38113312647">
 									<i class="fa fa-phone mobile-phone" aria-hidden="true"></i>
-									<div class="link-text">062 / 22 12 33</div>
+									<div class="link-text">013 / 312 647</div>
 								</a>
 							</li>
 							<li class="side-toggle">
@@ -136,14 +149,14 @@
 					<li class="margin-bottom-30 underline">
 						<ul class="working-hours-underline">
 							<li class="margin-bottom-10">
-								Ponedeljak - Petak:
+								Ponedeljak - Nedelja:
 							</li>
 							<li>
-								07:00 - 00:00 h
+								16:00 - 00:00 h
 							</li>
 						</ul>
 					</li>
-					<li class="margin-bottom-30 underline">
+					<!-- <li class="margin-bottom-30 underline">
 						<ul class="working-hours-underline">
 							<li class="margin-bottom-10">
 								Subota:
@@ -162,7 +175,7 @@
 								16:00 - 00:00 h
 							</li>
 						</ul>
-					</li>
+					</li> -->
 					<li class="margin-bottom-20">
 						<a href="https://goo.gl/maps/vQ7ADdxZWBPnu5LB8" target="_blank"><i class="fa fa-map-marker"
 								aria-hidden="true"></i>Vojvode Radmomira Putnika 31</a>
@@ -171,10 +184,10 @@
 						<a href="tel:+38113312647"><i class="fa fa-phone"
 								aria-hidden="true"></i>013&nbsp;/&nbsp;312&nbsp;-&nbsp;647</a>
 					</li>
-					<li class="margin-bottom-50">
+					<!-- <li class="margin-bottom-50">
 						<a href="tel:+38162221233"><i class="fa fa-phone"
 								aria-hidden="true"></i>062&nbsp;/&nbsp;221&nbsp;-&nbsp;233</a>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 			<div class="col-xl-3 col-lg-3 col-md-6 title-orientation show-info">
@@ -182,7 +195,7 @@
 					<li class="margin-bottom-30">
 						<h2>Popaj 2</h2>
 					</li>
-					<li class="margin-bottom-30 underline">
+					<!-- <li class="margin-bottom-30 underline">
 						<ul class="working-hours-underline">
 							<li class="margin-bottom-10">
 								Ponedeljak - Petak:
@@ -201,11 +214,11 @@
 								15:30 - 00:00 h
 							</li>
 						</ul>
-					</li>
+					</li> -->
 					<li class="underline-red margin-bottom-30">
 						<ul class="working-hours-underline">
 							<li class="margin-bottom-10">
-								Nedelja:
+								Ponedeljak - Nedelja:
 							</li>
 							<li>
 								Zatvoreno							
@@ -216,10 +229,10 @@
 						<a href="https://goo.gl/maps/e7motjhGm7hnjvKt6" target="_blank"><i class="fa fa-map-marker"
 								aria-hidden="true"></i>Vojvode Radmomira Putnika 7</a>
 					</li>
-					<li class="margin-bottom-20">
+					<!-- <li class="margin-bottom-20">
 						<a href="tel:+38113335090"><i class="fa fa-phone"
 								aria-hidden="true"></i>013&nbsp;/&nbsp;335&nbsp;-&nbsp;090</a>
-					</li>
+					</li> -->
 					<li class="margin-bottom-50">
 						<a href="https://m.facebook.com/Picerija-Popaj-Pan%C4%8Devo-112635021216199/" target="_blank"><i
 								class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -238,14 +251,14 @@
 							<li class="margin-bottom-20 underline">
 								<ul class="working-hours-underline">
 									<li class="margin-bottom-10">
-										Ponedeljak - Petak:
+										Ponedeljak - Nedelja:
 									</li>
 									<li>
-										07:00 - 00:00 h
+										16:00 - 00:00 h
 									</li>
 								</ul>
 							</li>
-							<li class="margin-bottom-20 underline">
+							<!-- <li class="margin-bottom-20 underline">
 								<ul class="working-hours-underline">
 									<li class="margin-bottom-10">
 										Subota:
@@ -264,7 +277,7 @@
 										16:00 - 00:00 h
 									</li>
 								</ul>
-							</li>
+							</li> -->
 							<li>
 								<a href="https://goo.gl/maps/e7motjhGm7hnjvKt6" target="_blank"><i class="fa fa-map-marker"
 										aria-hidden="true"></i>Vojvode Radmomira Putnika 31</a>
@@ -273,16 +286,16 @@
 								<a href="tel:+38113312647"><i class="fa fa-phone"
 										aria-hidden="true"></i>013&nbsp;/&nbsp;312&nbsp;-&nbsp;647</a>
 							</li>
-							<li class="margin-bottom-20">
+							<!-- <li class="margin-bottom-20">
 								<a href="tel:+38162221233"><i class="fa fa-phone"
 									aria-hidden="true"></i>062&nbsp;/&nbsp;221&nbsp;-&nbsp;233</a>
-							</li>
+							</li> -->
 						</ul>
 						<ul class="col-6">
 							<li class="margin-bottom-20 align-center">
 								<h2 style="font-size: 26px; ">Popaj 2</h2>
 							</li>
-							<li class="margin-bottom-20 underline">
+							<!-- <li class="margin-bottom-20 underline">
 								<ul class="working-hours-underline">
 									<li class="margin-bottom-10">
 										Ponedeljak - Petak:
@@ -301,11 +314,11 @@
 										15:30 - 00:00 h
 									</li>
 								</ul>
-							</li>
+							</li> -->
 							<li class="underline-red margin-bottom-20">
 								<ul class="working-hours-underline">
 									<li class="margin-bottom-10">
-										Nedelja:
+										Ponedeljak - Nedelja:
 									</li>
 									<li style="padding-left: 2px;">
 										Zatvoreno							
@@ -315,9 +328,9 @@
 							<li>
 								<a href="https://goo.gl/maps/vQ7ADdxZWBPnu5LB8" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i>Vojvode Radmomira Putnika 7</a>
 							</li>
-							<li class="margin-bottom-20">
+							<!-- <li class="margin-bottom-20">
 								<a href="tel:+38113335090"><i class="fa fa-phone" aria-hidden="true"></i>013&nbsp;/&nbsp;335&nbsp;-&nbsp;090</a>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 					<div class="row">
@@ -778,17 +791,19 @@
 						<div class="footer-logo">
 							<img class="padding50" src="images/footer-logo.png" alt="footer-logo">
 							<ul>
+								<li>popaj 1</li>
 								<li>
 									<a href="https://goo.gl/maps/vQ7ADdxZWBPnu5LB8" target="_blank">Vojvode Radomira
 										Putnika 31</a>
 								</li>
 								<li>telefon - <a href="tel:+38113312647">013/312-647</a></li>
+								<!-- <li>popaj 2</li>
 								<li>
 									<a href="https://goo.gl/maps/e7motjhGm7hnjvKt6" target="_blank">Vojvode Radomira
 										Putnika 7</a>
-								</li>
-								<li>telefon - <a href="tel:+38113335090">013 / 335 - 090</a></li>
-								<li>glavni telefon - <a href="tel:+38162221233">062/22-12-33</a></li>
+								</li> -->
+								<!-- <li>telefon - <a href="tel:+38113335090">013 / 335 - 090</a></li> -->
+								<!-- <li>glavni telefon - <a href="tel:+38162221233">062/22-12-33</a></li> -->
 							</ul>
 						</div>
 					</div>
@@ -797,9 +812,7 @@
 						<div class="opening-hours">
 							<h2>Radno vreme</h2>
 							<ul>
-								<li>Pon - Pet : <span>07:00 - 00:00</span></li>
-								<li>Subota : <span>15:30 - 00:00</span></li>
-								<li>Nedelja :</li>
+								<li>Ponedeljak - Nedelja</li>
 								<li>
 									Popaj 1: 16:00 - 00:00
 								</li>

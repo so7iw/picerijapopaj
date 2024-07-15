@@ -139,6 +139,11 @@ a.btn.btn-green:hover{color: #fff !important; background: rgb(253 157 62 / .7);}
 .top-scrolling a, .widgetPhone a { display: block; width: 40px; height: 40px; line-height: 40px; text-align: center; background: #e63636; border-radius: 100%; color: #fff; font-size: 30px;}
 .top-scrolling a:hover , .widgetPhone a:hover{background: #000;}
 
+.hidden {  opacity: 0;transition: opacity 1s}.visible {opacity: 1;}
+#working-time-info{
+  position: fixed; z-index: 2000; right:25%; top:10%; width: 50%; font-size: 25px; box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+}
+
 table.border {border-color: #e5e5e5 !important;}
 
 /*_______________________________________________________
@@ -273,7 +278,7 @@ _______________________________________________________*/
 
 .information-mobile{
   background-color: rgba(0, 0, 0, 0.6);
-  height: 490px;
+  height: 380px;
   margin-top: auto;
   width:100%;
   display: none;
@@ -321,6 +326,7 @@ _______________________________________________________*/
 }
 #social-links{
   margin: 0 auto;
+  padding-top:35px;
   width:20%;
   display: flex;
   flex-direction: row;
