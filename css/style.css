@@ -278,7 +278,7 @@ _______________________________________________________*/
 
 .information-mobile{
   background-color: rgba(0, 0, 0, 0.6);
-  height: 380px;
+  height: 400px;
   margin-top: auto;
   width:100%;
   display: none;
@@ -326,7 +326,6 @@ _______________________________________________________*/
 }
 #social-links{
   margin: 0 auto;
-  padding-top:35px;
   width:20%;
   display: flex;
   flex-direction: row;
