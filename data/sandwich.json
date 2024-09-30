@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Pileća Prsa",
-        "price": 240,
+        "price": 270,
         "img": {
             "src": "images/pilecaprsa.jpg",
             "alt": "Sandwich Pileća Prsa"
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "name": "Suvi Vrat",
-        "price": 260,
+        "price": 290,
         "img": {
             "src": "images/suvivrat.jpg",
             "alt": "Sandwich Suvi Vrat"
@@ -20,7 +20,7 @@
     {
         "id": 3,
         "name": "Pečenica",
-        "price": 260,
+        "price": 290,
         "img": {
             "src": "images/pecenica.jpg",
             "alt": "Sandwich Pečenica"
@@ -29,7 +29,7 @@
     {
         "id": 4,
         "name": "Šunka",
-        "price": 230,
+        "price": 260,
         "img": {
             "src": "images/sunka.jpg",
             "alt": "Sandwich Šunka"
@@ -38,7 +38,7 @@
     {
         "id": 5,
         "name": "Pršuta",
-        "price": 290,
+        "price": 320,
         "img": {
             "src": "images/prsutasendvic.jpg",
             "alt": "Sandwich Pršuta"
@@ -47,7 +47,7 @@
     {
         "id": 6,
         "name": "Kulen",
-        "price": 260,
+        "price": 320,
         "img": {
             "src": "images/kulen.jpg",
             "alt": "Sandwich Kulen"
