@@ -6,11 +6,11 @@
         "pricing":[
             {
                 "size":50,
-                "price":1170
+                "price":1270
             },
             {
                 "size":35,
-                "price":730
+                "price":830
             }
         ],
         "img":{
@@ -25,11 +25,11 @@
         "pricing":[
             {
                 "size":50,
-                "price":1170
+                "price":1270
             },
             {
                 "size":35,
-                "price":730
+                "price":830
             }
         ],
         "img":{
@@ -44,11 +44,11 @@
         "pricing":[
             {
                 "size":50,
-                "price":1320
+                "price":1440
             },
             {
                 "size":35,
-                "price":830
+                "price":890
             }
         ],
         "img":{
@@ -63,11 +63,11 @@
         "pricing":[
             {
                 "size":50,
-                "price":1330
+                "price":1440
             },
             {
                 "size":35,
-                "price":830
+                "price":890
             }
         ],
         "img":{
@@ -82,11 +82,11 @@
         "pricing":[
             {
                 "size":50,
-                "price":1340
+                "price":1480
             },
             {
                 "size":35,
-                "price":850
+                "price":930
             }
         ],
         "img":{
@@ -101,11 +101,11 @@
         "pricing":[
             {
                 "size":50,
-                "price":1370
+                "price":1490
             },
             {
                 "size":35,
-                "price":880
+                "price":940
             }
         ],
         "img":{
@@ -120,11 +120,11 @@
         "pricing":[
             {
                 "size":50,
-                "price":1450
+                "price":1570
             },
             {
                 "size":35,
-                "price":920
+                "price":980
             }
         ],
         "img":{
@@ -139,11 +139,11 @@
         "pricing":[
             {
                 "size":50,
-                "price":1450
+                "price":1570
             },
             {
                 "size":35,
-                "price":920
+                "price":980
             }
         ],
         "img":{
@@ -158,11 +158,11 @@
         "pricing":[
             {
                 "size":50,
-                "price":1370
+                "price":1490
             },
             {
                 "size":35,
-                "price":880
+                "price":940
             }
         ],
         "img":{
@@ -177,11 +177,11 @@
         "pricing":[
             {
                 "size":50,
-                "price":1370
+                "price":1490
             },
             {
                 "size":35,
-                "price":880
+                "price":940
             }
         ],
         "img":{
@@ -196,11 +196,11 @@
         "pricing":[
             {
                 "size":50,
-                "price":1400
+                "price":1520
             },
             {
                 "size":35,
-                "price":910
+                "price":970
             }
         ],
         "img":{
@@ -215,11 +215,11 @@
         "pricing":[
             {
                 "size":50,
-                "price":1620
+                "price":1740
             },
             {
                 "size":35,
-                "price":1030
+                "price":1090
             }
         ],
         "img":{
@@ -234,11 +234,11 @@
         "pricing":[
             {
                 "size":50,
-                "price":1400
+                "price":1520
             },
             {
                 "size":35,
-                "price":910
+                "price":970
             }
         ],
         "img":{
@@ -253,11 +253,11 @@
         "pricing":[
             {
                 "size":50,
-                "price":1370
+                "price":1490
             },
             {
                 "size":35,
-                "price":880
+                "price":940
             }
         ],
         "img":{
@@ -272,11 +272,11 @@
         "pricing":[
             {
                 "size":50,
-                "price":1470
+                "price":1590
             },
             {
                 "size":35,
-                "price":880
+                "price":940
             }
         ],
         "img":{
@@ -291,11 +291,11 @@
         "pricing":[
             {
                 "size":50,
-                "price":1520
+                "price":1640
             },
             {
                 "size":35,
-                "price":930
+                "price":990
             }
         ],
         "img":{
@@ -310,11 +310,11 @@
         "pricing":[
             {
                 "size":50,
-                "price":1520
+                "price":1640
             },
             {
                 "size":35,
-                "price":930
+                "price":990
             }
         ],
         "img":{
