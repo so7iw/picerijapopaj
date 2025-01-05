@@ -168,6 +168,7 @@
 	.show-info{
 		display: block;
 	}
+	.lastSalad{padding-bottom: 35px;}
 }
 
 @media(max-width: 1024px){
@@ -647,10 +648,15 @@
 	.menu-list.pt-100 {padding-bottom: 30px;}
 	.menu-list-box-2 {margin-bottom: 10px;}
 	.iteam-name, .sandwichListItem, .menuListContainer h3{font-size: 16px;}
-	.sandwichList{width:70%;}
+	#saladsPhone h3{font-size: 16px;}
+	.sandwichList{width:70%; max-width: 100%;}
 	.iteam-srice {font-size: 16px;}
 	.iteam-desc{line-height: 16px;}
 	.menu-list-box-2 .iteam-desc{height: 22px;}
+	.singleDotLine{height: 3px; width: 3px;}
+	.baseIngredients{padding-bottom: 0px;}
+	.menuContentSalads{width: 70%;justify-content: space-between;}
+	.lastSalad{padding-bottom: 20px;}
 
 	/*_______________________________________________________
 	// Blog Page  //----------------------------
