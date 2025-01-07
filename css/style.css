@@ -677,9 +677,6 @@ button.news-more {border: unset; background: transparent;}
 .lastSalad{
   padding-bottom: 50px;
 }
-.menuContent p:last-child + .singleDotLine {
-  display: none; /* Hides the singleDotLine div if it's the last element */
-}
 .baseIngredients{padding-bottom: 50px;}
 .sandwichList{
   max-width: 50%;
@@ -695,16 +692,7 @@ button.news-more {border: unset; background: transparent;}
   margin-left: 10px; 
   margin-bottom: 8px;
 }
-.dot-separator {
-  display: inline-block;
-  width: 10px; /* Size of the dot */
-  height: 10px; /* Size of the dot */
-  border-radius: 50%; /* Make it a circle */
-  background-color: #c5c4c4; /* Dot color */
-  margin: 0 8px; /* Space between text and dot */
-}
 .singleDotLine {
-  /* border-top: 3px dotted #c5c4c4;  */
   width: 4px; 
   height: 4px;
   background-color: #c5c4c4;
@@ -714,15 +702,6 @@ button.news-more {border: unset; background: transparent;}
 }
 .sandwichGrid {
   display: grid;
-  grid-template-columns: 1fr auto 70px auto 1fr;
-  align-items: center;
-  justify-content: center;
-  gap: 1px;
-  width: fit-content;
-  margin: 5px auto;
-}
-.sandwichGrid2 {
-  display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   justify-content: center;
@@ -730,7 +709,7 @@ button.news-more {border: unset; background: transparent;}
   width: fit-content;
   margin: 5px auto;
 }
-.sandwichGrid3 {
+.sandwichGridSingleItem {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
