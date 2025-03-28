@@ -1,5 +1,14 @@
 [
     {
+        "id":0,
+        "name":"Dubai",
+        "price": 700,
+        "img":{
+            "src":"images/dubai.jpg",
+            "alt":"Dubai"
+        }
+    },
+    {
         "id":1,
         "name":"Pistaći",
         "price": 400,
