@@ -88,8 +88,11 @@ h6 {font-size: 13px; padding: 0px; margin: 0;}
 h1, h2, h3, h4, h5, h6 {color: #1d1d1d;}
 
 /* - Button Style  //----------------*/ 
-.com-btn{background: #354E19; border: 1px solid #354E19; color: #ffffff; font-weight: 700; padding: 17px 41px; border-radius: 50px; display: inline-block; letter-spacing: 1px; text-transform: uppercase; margin-top: 40px;}
-.com-btn:hover{background: #fefefe; color: #354E19;}
+.com-btn-green{background: #354d19; border: 1px solid #354d19;}
+.com-btn{background: #e63636; border: 1px solid #e63636;}
+.com-btn, .com-btn-green{color: #ffffff; font-weight: 700; padding: 17px 41px; border-radius: 50px; display: inline-block; letter-spacing: 1px; text-transform: uppercase; margin-top: 40px;}
+.com-btn-green:hover{background: #fefefe; color: #354d19;}
+.com-btn:hover{background: #fefefe; color: #e63636;}
 .btn, button { padding: 13px 15px; font-size: 16px; line-height: 16px; font-weight: 400; cursor: pointer; transition: all 0.3s ease 0s; -moz-transition: all 0.3s ease 0s; -webkit-transition: all 0.3s ease 0s; -o-transition: all 0.3s ease 0s; border-radius: 20px; -moz-border-radius: 20px; -webkit-border-radius: 20px; -o-border-radius: 20px; text-transform: uppercase;}
 .btn-color {color: #fff !important; background: #e63636; border: none; border: 1px solid #e63636;}
 .btn-color:hover {color: #e63636 !important; background: transparent; border: 1px solid #e63636;}
@@ -381,8 +384,8 @@ _______________________________________________________*/
 }
 
 #ad{
-  height:450px;
-  background-image: url(../images/dubai-post.jpg);
+  height:800px;
+  background-image: url(../images/dubai.jpg);
   background-repeat: no-repeat;
   background-size:contain;
   background-position: center;

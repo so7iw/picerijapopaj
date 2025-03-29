@@ -201,6 +201,10 @@
 
 	.crust-title {font-size: 35px;}
 	.filter-part .filter-line li{padding: 16px 25px;}
+
+	#ad{
+		height: 700px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -210,8 +214,6 @@
 	.header-right-link > ul > li:hover .header-link-dropdown {opacity: 1;}
 	.nav > li.level:hover .megamenu {display: block;}
 	.header-right-link ul li.cart-icon:hover > a span.icon {background-position: -9px -52px;}
-
-	
 }
 
 @media(max-width: 991px){
@@ -219,6 +221,10 @@
 	.ptb {padding-top: 65px; padding-bottom: 65px;}
 	.pt-50 {padding-top: 20px;}
 	.pt-100 {padding-top: 65px;}
+
+	#ad{
+		height: 460px;
+	}
 
 	.show-info{
 		display: none;
@@ -502,7 +508,9 @@
 @media(max-width: 767px){
 	#menuNew,#pizzaMenuAnchor,#sweetPancakeMenuAnchor,#pancakeMenuAnchor,#sandwichMenuAnchor, #sweetPancakeMenuAnchorSpecial{padding-top: 90px; padding-bottom: 10px;}
 
-	
+	#ad{
+		height: 460px;
+	}
 
 	.information-mobile{
 		padding:35px;
@@ -824,7 +832,8 @@
 @media(max-width: 480px){
 
 	#ad{
-		height:500px;
+		height:540px;
+		background-image: url(../images/dubai-post.jpg);
 	  }
 
 	.pt-100 {padding-top: 30px;}

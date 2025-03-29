@@ -2,7 +2,7 @@
     {
         "id":0,
         "name":"Dubai",
-        "price": 700,
+        "price": 690,
         "img":{
             "src":"images/dubai.jpg",
             "alt":"Dubai"
