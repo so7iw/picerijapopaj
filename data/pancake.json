@@ -11,7 +11,7 @@
     {
         "id":1,
         "name":"Pistaći",
-        "price": 400,
+        "price": 500,
         "img":{
             "src":"images/pistaci.jpg",
             "alt":"Pistaci"
