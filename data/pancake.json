@@ -61,23 +61,5 @@
             "src":"images/ferrero.jpg",
             "alt":"Ferrero Rocher"
         }
-    },
-    {
-        "id":7,
-        "name":"Crispy",
-        "price": 350,
-        "img":{
-            "src":"images/crispy.jpg",
-            "alt":"Crispy"
-        }
-    },
-    {
-        "id":8,
-        "name":"Oreo",
-        "price": 320,
-        "img":{
-            "src":"images/karamela.jpg",
-            "alt":"Karamela"
-        }
     }
 ]
