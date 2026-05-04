@@ -170,7 +170,7 @@ $(function () {
 
     function fetchData(file, callback) {
         $.ajax({
-            url: "data/" + file + ".json",
+            url: "data/" + file + ".json?v=" + Date.now(),
             method: "get",
             dataType: "json",
             success: function (response) {
