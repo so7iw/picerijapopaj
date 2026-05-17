@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8" />
 	<link type="image/x-icon" href="images/fav-icon.png" rel="icon">
+	<link rel="canonical" href="https://www.picerijapopaj.com/">
 	<meta name="description"
 		content="Ukoliko ste gladni i želite da nešto prezalogajite, ili okupljate društvo da gledate utakmicu - ne gledajte dalje. Pogledajte našu ponudu, odaberite uvek svežu picu, palačinku ili sendvič, i naručite je Popaj besplatnom dostavom.">
 	<meta name="keywords" content="Picerija, Pancevo, Popaj, Pica, Sendvic, Palacinke, Pizza, Pancake, Sandwich">
@@ -19,8 +20,11 @@
 	<meta property="og:image" content="https://www.picerijapopaj.com/images/list-3.jpg">
 	<meta property="og:description"
 		content="Ukoliko ste gladni i želite da nešto prezalogajite, ili okupljate društvo da gledate utakmicu - ne gledajte dalje. Pogledajte našu ponudu, odaberite uvek svežu picu, palačinku ili sendvič, i naručite je Popaj besplatnom dostavom.">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://www.googletagmanager.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Pacifico&display=swap">
+	<link rel="stylesheet" type="text/css" href="css/animations.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.min.css">
@@ -34,6 +38,57 @@
 
 		gtag('config', 'G-R2S2FL7PYW');
 	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Restaurant",
+		"name": "Picerija Popaj",
+		"url": "https://www.picerijapopaj.com",
+		"logo": "https://www.picerijapopaj.com/images/header-logo.png",
+		"image": "https://www.picerijapopaj.com/images/list-3.jpg",
+		"telephone": ["+38162221233", "+38113312647", "+38113335090"],
+		"servesCuisine": ["Pizza", "Palačinke", "Sendviči"],
+		"priceRange": "$$",
+		"address": [
+			{
+				"@type": "PostalAddress",
+				"streetAddress": "Vojvode Radomira Putnika 31",
+				"addressLocality": "Pančevo",
+				"addressCountry": "RS"
+			},
+			{
+				"@type": "PostalAddress",
+				"streetAddress": "Vojvode Radomira Putnika 7",
+				"addressLocality": "Pančevo",
+				"addressCountry": "RS"
+			}
+		],
+		"openingHoursSpecification": [
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+				"opens": "07:00",
+				"closes": "00:00"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "Saturday",
+				"opens": "07:00",
+				"closes": "00:00"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "Sunday",
+				"opens": "16:00",
+				"closes": "00:00"
+			}
+		],
+		"sameAs": [
+			"https://www.facebook.com/Picerija-Popaj-Pan%C4%8Devo-112635021216199/",
+			"https://www.instagram.com/popaj_picerija/"
+		]
+	}
+	</script>
 </head>
 
 <body>
@@ -43,13 +98,14 @@
 				<div class="col-xl-3 col-lg-2 col-md-4 col-3 p-0">
 					<div class="navbar-header">
 						<a class="navbar-brand page-scroll" href="index.html">
-							<img alt="popaj" src="images/header-logo.png">
+							<img alt="Picerija Popaj logo" src="images/header-logo.png">
 						</a>
 					</div>
 				</div>
 				<div class="col-xl-9 col-lg-10 col-md-8 col-9 p-0 text-right">
 					<div id="menu" class="navbar-collapse collapse">
 
+						<nav>
 						<ul class="nav navbar-nav">
 							<li class="level">
 								<a href="index.html" class="page-scroll">Početna</a>
@@ -102,21 +158,22 @@
 								<a href="contact.html" class="page-scroll">Poslovi</a>
 							</li>
 							<li class="level">
-								<a href="tel:+38162221233"><i class="fa fa-phone" aria-hidden="true"></i>062 / 22 12 33</a>
+								<a href="tel:+38162221233"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512" fill="currentColor" style="margin-right:10px;vertical-align:middle"><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-176.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C4.3 367.3-1.6 378.9 1 390.2l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg>062 / 22 12 33</a>
 							</li>
 						</ul>
+						</nav>
 					</div>
 					<div class=" header-right-link">
 						<ul>
 							<li class="call-icon">
-								<a href="tel:+38162221233">
-									<i class="fa fa-phone mobile-phone" aria-hidden="true"></i>
+								<a href="tel:+38162221233" aria-label="Pozovite nas: 062 221 233">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512" fill="currentColor" class="mobile-phone" style="margin-top:3px;margin-right:10px"><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-176.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C4.3 367.3-1.6 378.9 1 390.2l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg>
 									<div class="link-text">062 / 22 12 33</div>
 								</a>
 							</li>
 							<li class="side-toggle">
 								<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle"
-									type="button"><span></span></button>
+									type="button" aria-label="Otvori meni"><span></span></button>
 							</li>
 						</ul>
 					</div>
@@ -125,6 +182,8 @@
 		</div>
 	</header>
 
+	<main>
+	<h1 class="sr-only">Picerija Popaj</h1>
 	<section class="banner" id="pageStart">
 		<div class="row banner-row">
 			<div class="col-xl-3 col-lg-3 col-md-6 title-orientation show-info">
@@ -163,16 +222,13 @@
 						</ul>
 					</li>
 					<li class="margin-bottom-20">
-						<a href="https://goo.gl/maps/vQ7ADdxZWBPnu5LB8" target="_blank"><i class="fa fa-map-marker"
-								aria-hidden="true"></i>Vojvode Radmomira Putnika 31</a>
+						<a href="https://goo.gl/maps/vQ7ADdxZWBPnu5LB8" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="0.75em" height="1em" viewBox="0 0 384 512" fill="currentColor" style="margin-right:15px;vertical-align:middle"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.774-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg>Vojvode Radmomira Putnika 31</a>
 					</li>
 					<li class="margin-bottom-20">
-						<a href="tel:+38113312647"><i class="fa fa-phone"
-								aria-hidden="true"></i>013&nbsp;/&nbsp;312&nbsp;-&nbsp;647</a>
+						<a href="tel:+38113312647"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512" fill="currentColor" style="margin-right:15px;vertical-align:middle"><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-176.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C4.3 367.3-1.6 378.9 1 390.2l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg>013&nbsp;/&nbsp;312&nbsp;-&nbsp;647</a>
 					</li>
 					<li class="margin-bottom-50">
-						<a href="tel:+38162221233"><i class="fa fa-phone"
-								aria-hidden="true"></i>062&nbsp;/&nbsp;221&nbsp;-&nbsp;233</a>
+						<a href="tel:+38162221233"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512" fill="currentColor" style="margin-right:15px;vertical-align:middle"><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-176.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C4.3 367.3-1.6 378.9 1 390.2l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg>062&nbsp;/&nbsp;221&nbsp;-&nbsp;233</a>
 					</li>
 				</ul>
 			</div>
@@ -207,23 +263,19 @@
 								Nedelja:
 							</li>
 							<li>
-								Zatvoreno							
+								Zatvoreno
 							</li>
 						</ul>
 					</li>
 					<li class="margin-bottom-20">
-						<a href="https://goo.gl/maps/e7motjhGm7hnjvKt6" target="_blank"><i class="fa fa-map-marker"
-								aria-hidden="true"></i>Vojvode Radmomira Putnika 7</a>
+						<a href="https://goo.gl/maps/e7motjhGm7hnjvKt6" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="0.75em" height="1em" viewBox="0 0 384 512" fill="currentColor" style="margin-right:15px;vertical-align:middle"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.774-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg>Vojvode Radmomira Putnika 7</a>
 					</li>
 					<li class="margin-bottom-20">
-						<a href="tel:+38113335090"><i class="fa fa-phone"
-								aria-hidden="true"></i>013&nbsp;/&nbsp;335&nbsp;-&nbsp;090</a>
+						<a href="tel:+38113335090"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512" fill="currentColor" style="margin-right:15px;vertical-align:middle"><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-176.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C4.3 367.3-1.6 378.9 1 390.2l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg>013&nbsp;/&nbsp;335&nbsp;-&nbsp;090</a>
 					</li>
 					<li class="margin-bottom-50">
-						<a href="https://m.facebook.com/Picerija-Popaj-Pan%C4%8Devo-112635021216199/" target="_blank"><i
-								class="fa fa-facebook" aria-hidden="true"></i></a>
-						<a href="https://www.instagram.com/popaj_picerija/" target="_blank"><i class="fa fa-instagram"
-								aria-hidden="true"></i></a>
+						<a href="https://m.facebook.com/Picerija-Popaj-Pan%C4%8Devo-112635021216199/" target="_blank" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 320 512" fill="currentColor"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
+						<a href="https://www.instagram.com/popaj_picerija/" target="_blank" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 448 512" fill="currentColor" style="margin-left:15px"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8 0-14.9 12-26.8 26.8-26.8 14.9 0 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
 					</li>
 				</ul>
 			</div>
@@ -265,16 +317,13 @@
 								</ul>
 							</li>
 							<li>
-								<a href="https://goo.gl/maps/e7motjhGm7hnjvKt6" target="_blank"><i class="fa fa-map-marker"
-										aria-hidden="true"></i>Vojvode Radmomira Putnika 31</a>
+								<a href="https://goo.gl/maps/e7motjhGm7hnjvKt6" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="0.75em" height="1em" viewBox="0 0 384 512" fill="currentColor" style="margin-right:15px;vertical-align:middle"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.774-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg>Vojvode Radmomira Putnika 31</a>
 							</li>
 							<li >
-								<a href="tel:+38113312647"><i class="fa fa-phone"
-										aria-hidden="true"></i>013&nbsp;/&nbsp;312&nbsp;-&nbsp;647</a>
+								<a href="tel:+38113312647"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512" fill="currentColor" style="margin-right:15px;vertical-align:middle"><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-176.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C4.3 367.3-1.6 378.9 1 390.2l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg>013&nbsp;/&nbsp;312&nbsp;-&nbsp;647</a>
 							</li>
 							<li class="margin-bottom-20">
-								<a href="tel:+38162221233"><i class="fa fa-phone"
-									aria-hidden="true"></i>062&nbsp;/&nbsp;221&nbsp;-&nbsp;233</a>
+								<a href="tel:+38162221233"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512" fill="currentColor" style="margin-right:15px;vertical-align:middle"><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-176.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C4.3 367.3-1.6 378.9 1 390.2l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg>062&nbsp;/&nbsp;221&nbsp;-&nbsp;233</a>
 							</li>
 						</ul>
 						<ul class="col-6">
@@ -307,25 +356,23 @@
 										Nedelja:
 									</li>
 									<li style="padding-left: 2px;">
-										Zatvoreno							
+										Zatvoreno
 									</li>
 								</ul>
 							</li>
 							<li>
-								<a href="https://goo.gl/maps/vQ7ADdxZWBPnu5LB8" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i>Vojvode Radmomira Putnika 7</a>
+								<a href="https://goo.gl/maps/vQ7ADdxZWBPnu5LB8" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="0.75em" height="1em" viewBox="0 0 384 512" fill="currentColor" style="margin-right:15px;vertical-align:middle"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.774-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg>Vojvode Radmomira Putnika 7</a>
 							</li>
 							<li class="margin-bottom-20">
-								<a href="tel:+38113335090"><i class="fa fa-phone" aria-hidden="true"></i>013&nbsp;/&nbsp;335&nbsp;-&nbsp;090</a>
+								<a href="tel:+38113335090"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512" fill="currentColor" style="margin-right:15px;vertical-align:middle"><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-176.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C4.3 367.3-1.6 378.9 1 390.2l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg>013&nbsp;/&nbsp;335&nbsp;-&nbsp;090</a>
 							</li>
 						</ul>
 					</div>
 					<div class="row">
 						<div id="social-links">
-							<a href="https://m.facebook.com/Picerija-Popaj-Pan%C4%8Devo-112635021216199/"><i
-								class="fa fa-facebook" aria-hidden="true"></i></a>
-						<a href="https://www.instagram.com/popaj_picerija/"><i class="fa fa-instagram"
-								aria-hidden="true"></i></a>
-						</div>						
+							<a href="https://m.facebook.com/Picerija-Popaj-Pan%C4%8Devo-112635021216199/" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 320 512" fill="currentColor"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
+						<a href="https://www.instagram.com/popaj_picerija/" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 448 512" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8 0-14.9 12-26.8 26.8-26.8 14.9 0 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -335,29 +382,29 @@
 	<section class="order-section ptb">
 		<div class="container">
 			<div class="row">
-				<div class="order-top"><img src="images/order-top.png" alt="layer"></div>
+				<div class="order-top"><img src="images/order-top.png" alt="layer" loading="lazy"></div>
 				<div class="col-xl-4 col-lg-4 col-md-4 col-4 servose-box text-center padding-lf">
-					<img src="images/order-1.svg" alt="order" class="order-img">
+					<img src="images/order-1.svg" alt="order" class="order-img" width="90" height="90" loading="lazy">
 					<h2 class="order-title text-uppercase margin-bottom-20">Lako do obroka</h2>
 					<p class="order-des d-none d-lg-block">Samo jedan kratak poziv Vas deli od Vašeg obroka - pozovite
 						nas i možete ga očekivati u rekordnom roku na Vašem pragu!</p>
 						<p class="order-des d-block d-lg-none">Jedan poziv Vas deli od obroka.</p>
 				</div>
 				<div class="col-xl-4 col-lg-4 col-md-4 col-4 servose-box text-center padding-lf">
-					<img src="images/order-3.svg" alt="delivery" class="order-img">
+					<img src="images/order-3.svg" alt="delivery" class="order-img" width="90" height="90" loading="lazy">
 					<h2 class="order-title text-uppercase margin-bottom-20">Besplatna dostava</h2>
 					<p class="order-des d-none d-lg-block">Besplatna dostava za sve porudžbine iznad 1000 dinara.
 						Odmarajte u udobnosti Vašeg doma, a ostalo prepustite nama!</p>
 					<p class="order-des d-block d-lg-none">Za sve porudžbine iznad 1000 dinara.</p>
 				</div>
 				<div class="col-xl-4 col-lg-4 col-md-4 col-4 servose-box text-center padding-lf">
-					<img src="images/order-3.svg" alt="delicious" class="order-img">
+					<img src="images/order-3.svg" alt="delicious" class="order-img" width="90" height="90" loading="lazy">
 					<h2 class="order-title text-uppercase margin-bottom-20">Originalni recepti</h2>
 					<p class="order-des d-none d-lg-block">Naš meni je ispunjen obrocima koji su naše originalne
 						recepture, savršeno uklopljeni ukusi samo za Vas, uključujući i potpuno originalne Popaj namaze!</p>
 					<p class="order-des d-block d-lg-none">Naše originalne recepture.</p>
 				</div>
-				<div class="order-bottom"><img src="images/order-bottom.png" alt="layer"></div>
+				<div class="order-bottom"><img src="images/order-bottom.png" alt="layer" loading="lazy"></div>
 			</div>
 		</div>
 	</section>
@@ -399,9 +446,8 @@
 		</div>
 		<div class="container">
 			<div class="row pb-50">
-				<div class="col-xl-6 col-lg-6 col-md-6 menuListContainer pb-50"
-					style="text-align: center; border-right: 2px solid #888888">
-					<h3 class="text-uppercase pb-50" style="color:#888888; font-weight: 500;">osnova</h3>
+				<div class="col-xl-6 col-lg-6 col-md-6 menuListContainer pb-50 sandwich-base-col">
+					<h3 class="text-uppercase pb-50 sandwich-section-title">osnova</h3>
 					<ul class="sandwichList">
 						<li class="menuContent">
 							<p class="sandwichListItem">šunka</p>
@@ -445,8 +491,8 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-xl-6 col-lg-6 col-md-6 menuListContainer" style="text-align: center;">
-					<h3 class="text-uppercase pb-50" style="color:#888888; font-weight: 500;">Dodaci</h3>
+				<div class="col-xl-6 col-lg-6 col-md-6 menuListContainer sandwich-addon-col">
+					<h3 class="text-uppercase pb-50 sandwich-section-title">Dodaci</h3>
 					<ul class="sandwichList">
 						<li class="menuContent">
 							<p class="sandwichListItem">kačkavalj</p>
@@ -473,12 +519,12 @@
 							<div class="line"></div>
 							<p class="sandwichListItem">50</p>
 						</li>
-						
+
 					</ul>
 				</div>
 			</div>
 				<div id="saladsPhone" style="text-align: center;" class="pb-50">
-					<h3 class="text-uppercase pb-50" style="color:#888888; font-weight: 500;">Besplatni namazi</h3>
+					<h3 class="text-uppercase pb-50 sandwich-section-title">Besplatni namazi</h3>
 					<div class="sandwichGrid">
 						<p class="sandwichListItem leftItem">majonez</p>
 						<div class="singleDotLine"></div>
@@ -529,7 +575,7 @@
 						<div class="singleDotLine"></div>
 						<p class="sandwichListItem rightItem">paprika i beli luk</p>
 					  </div>
-					  <h3 class="text-uppercase pb-50" style="color:#888888; font-weight: 500;">Besplatne Salate</h3>
+					  <h3 class="text-uppercase pb-50 sandwich-section-title">Besplatne Salate</h3>
 					  <div class="sandwichGridSingleItem">
 						<p class="sandwichListItem centralItem">paradajz</p>
 					  </div>
@@ -554,9 +600,8 @@
 				<h2 class="headding-sub" id="sweetPancakeMenuAnchor">Slatke Palačinke</h2>
 			</div>
 			<div class="row  pb-50">
-				<div class="col-xl-6 col-lg-6 col-md-6 menuListContainer pb-30"
-					style="text-align: center; border-right: 2px solid #888888">
-					<h3 class="text-uppercase pb-50" style="color:#888888; font-weight: 500;">osnova</h3>
+				<div class="col-xl-6 col-lg-6 col-md-6 menuListContainer pb-30 sandwich-base-col">
+					<h3 class="text-uppercase pb-50 sandwich-section-title">osnova</h3>
 					<ul class="sandwichList">
 						<li class="menuContent">
 							<p class="sandwichListItem">pekmez</p>
@@ -600,8 +645,8 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-xl-6 col-lg-6 col-md-6 menuListContainer pb-30" style="text-align: center;">
-					<h3 class="text-uppercase pb-50" style="color:#888888; font-weight: 500;">dodaci</h3>
+				<div class="col-xl-6 col-lg-6 col-md-6 menuListContainer pb-30 sandwich-addon-col">
+					<h3 class="text-uppercase pb-50 sandwich-section-title">dodaci</h3>
 					<ul class="sandwichList">
 						<li class="menuContent">
 							<p class="sandwichListItem">plazma</p>
@@ -697,9 +742,8 @@
 		</div>
 		<div class="container">
 			<div class="row baseIngredients">
-				<div class="col-xl-6 col-lg-6 col-md-6 menuListContainer pb-30"
-					style="text-align: center; border-right: 2px solid #888888">
-					<h3 class="text-uppercase pb-50" style="color:#888888; font-weight: 500;">osnova</h3>
+				<div class="col-xl-6 col-lg-6 col-md-6 menuListContainer pb-30 sandwich-base-col">
+					<h3 class="text-uppercase pb-50 sandwich-section-title">osnova</h3>
 					<ul class="sandwichList">
 						<li class="menuContent">
 							<p class="sandwichListItem">šunka</p>
@@ -748,8 +792,8 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-xl-6 col-lg-6 col-md-6 menuListContainer pb-30" style="text-align: center;">
-					<h3 class="text-uppercase pb-50" style="color:#888888; font-weight: 500;">dodaci</h3>
+				<div class="col-xl-6 col-lg-6 col-md-6 menuListContainer pb-30 sandwich-addon-col">
+					<h3 class="text-uppercase pb-50 sandwich-section-title">dodaci</h3>
 					<ul class="sandwichList">
 						<li class="menuContent">
 							<p class="sandwichListItem">suhomesnato</p>
@@ -784,8 +828,8 @@
 					</ul>
 				</div>
 			</div>
-				<div id="saladsPhone" style="text-align: center;" class="pb-50">
-					<h3 class="text-uppercase pb-50" style="color:#888888; font-weight: 500;">Besplatni namazi</h3>
+				<div id="saladsPhonePancake" style="text-align: center;" class="pb-50">
+					<h3 class="text-uppercase pb-50 sandwich-section-title">Besplatni namazi</h3>
 					<div class="sandwichGrid">
 						<p class="sandwichListItem leftItem">majonez</p>
 						<div class="singleDotLine"></div>
@@ -836,7 +880,7 @@
 						<div class="singleDotLine"></div>
 						<p class="sandwichListItem rightItem">paprika i beli luk</p>
 					  </div>
-					  <h3 class="text-uppercase pb-50" style="color:#888888; font-weight: 500;">Besplatne Salate</h3>
+					  <h3 class="text-uppercase pb-50 sandwich-section-title">Besplatne Salate</h3>
 					  <div class="sandwichGridSingleItem">
 						<p class="sandwichListItem centralItem">paradajz</p>
 					  </div>
@@ -870,19 +914,20 @@
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6">
 					<div class="about-pizzon-img">
-						<img src="images/about.png" alt="about" class="pizzon-ab">
+						<img src="images/about.png" alt="O Popaju" class="pizzon-ab" loading="lazy">
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	</main>
 
 	<div class="widgetPhone">
-		<a href="tel:+38162221233"><i class="fa fa-phone" aria-hidden="true"></i></a>
+		<a href="tel:+38162221233" aria-label="Pozovite nas"><svg xmlns="http://www.w3.org/2000/svg" width="0.8em" height="0.8em" viewBox="0 0 512 512" fill="currentColor"><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-176.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C4.3 367.3-1.6 378.9 1 390.2l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg></a>
 	</div>
 
 	<div class="top-scrolling">
-		<a href="#pageStart" class="scrollTo"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+		<a href="#pageStart" class="scrollTo" aria-label="Nazad na vrh"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 320 512" fill="currentColor"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/></svg></a>
 	</div>
 
 	<footer>
@@ -891,7 +936,7 @@
 				<div class="row">
 					<div class="col-xl-4 col-lg-4 col-md-4 footer-box">
 						<div class="footer-logo">
-							<img class="padding50" src="images/footer-logo.png" alt="footer-logo">
+							<img class="padding50" src="images/footer-logo.png" alt="Picerija Popaj logo" loading="lazy">
 							<ul>
 								<li>
 									<a href="https://goo.gl/maps/vQ7ADdxZWBPnu5LB8" target="_blank">Vojvode Radomira
@@ -945,9 +990,8 @@
 					<div class="col-xl-6 col-lg-6 col-md-6 copyright-box">
 						<ul>
 							<li><a href="https://m.facebook.com/Picerija-Popaj-Pan%C4%8Devo-112635021216199/"
-									target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="https://www.instagram.com/popaj_picerija/" target="_blank"><i
-										class="fa fa-instagram" aria-hidden="true"></i></a></li>
+									target="_blank" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 320 512" fill="currentColor"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a></li>
+							<li><a href="https://www.instagram.com/popaj_picerija/" target="_blank" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 448 512" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8 0-14.9 12-26.8 26.8-26.8 14.9 0 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
 						</ul>
 					</div>
 				</div>

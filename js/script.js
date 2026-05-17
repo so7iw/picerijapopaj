@@ -1,12 +1,31 @@
-// var w = 0;
-$(function () {
+document.addEventListener('DOMContentLoaded', function () {
     "use strict";
 
-    $(function () {
-        $(document).scroll(function () {
-            var $nav = $("#header");
-            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    function setHeaderHeight() {
+        var h = document.getElementById('header');
+        if (h) document.documentElement.style.setProperty('--header-height', (h.offsetHeight + 1) + 'px');
+    }
+    setHeaderHeight();
+    window.addEventListener('resize', setHeaderHeight);
+    window.addEventListener('load', setHeaderHeight);
+
+    document.querySelectorAll('.top-scrolling a, .widgetPhone a').forEach(function (el) {
+        el.addEventListener('touchstart', function () {
+            this.classList.add('tapped');
         });
+        el.addEventListener('touchend', function () {
+            var link = this;
+            setTimeout(function () {
+                link.classList.remove('tapped');
+                link.blur();
+            }, 150);
+        });
+    });
+
+    $(document).scroll(function () {
+        var $nav = $("#header");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        $('.top-scrolling, .widgetPhone').toggleClass("sticky", $(this).scrollTop() > 90);
     });
 
     $('#cv').change(function () {
@@ -16,14 +35,7 @@ $(function () {
             $('#selected_filename').text("Datoteka nije odabrana");
     });
 
-    $(function () {
-        $(document).scroll(function () {
-            $('.top-scrolling, .widgetPhone').toggleClass("sticky", $(this).scrollTop() > 90);
-        });
-    });
-
     function responsive_dropdown() {
-        /*---- Scrolling js -----*/
         $(".scrollTo").on('click', function (e) {
             e.preventDefault();
             var target = $(this).attr('href');
@@ -31,7 +43,7 @@ $(function () {
                 scrollTop: ($(target).offset().top)
             }, 1000);
         });
-        /* Responsive menu */
+
         $(".navbar-toggle").on("click", function () {
             $(".navbar-toggle, .header-menu").toggleClass("active");
             $("#header").toggleClass("background-black");
@@ -56,17 +68,7 @@ $(function () {
                 $(".opener")
                     .siblings(".megamenu")
                     .slideUp(200);
-                $(".set > a i")
-                    .removeClass("fa-minus")
-                    .addClass("fa-plus");
             } else {
-                $(".set > a i")
-                    .removeClass("fa-minus")
-                    .addClass("fa-plus");
-                $(".opener")
-                    .find("i")
-                    .removeClass("fa-plus")
-                    .addClass("fa-minus");
                 $(".set > .opener").removeClass("active");
                 $(".opener").addClass("active");
                 $(".megamenu").slideUp(200);
@@ -75,122 +77,87 @@ $(function () {
                     .slideDown(200);
             }
         });
-
-        $(".set").on("click", function () {
-            if ($(this).hasClass("active")) {
-                $(this).removeClass("active");
-                $(".set")
-                    .removeClass("")
-                    .addClass("");
-            } else {
-                $(".set")
-                    .removeClass("")
-                    .addClass("");
-                $(this)
-                    .find("i")
-                    .removeClass("s")
-                    .addClass("");
-                $(".set").removeClass("active");
-                $(this).addClass("active");
-            }
-        });
-        /* Responsive menu End */
-    };
+    }
 
     function printPancakeMenu(json) {
-        let output = ``;
-        json.forEach(el => {
-            output += `
-                <div class="col-xl-4 col-lg-4 col-md-4">
-					<div class="menu-list-box">
-						<div class="list-img-3"><img src="${el.img.src}" alt="${el.img.alt}"></div>
-						<div class="menu-detail">
-                            <a href="#" class="iteam-name"> ${el.name} </a>
-                            <p class="iteam-order">${el.price}</p>
-						</div>
-					</div>
-				</div>
-                `;
+        var output = '';
+        json.forEach(function (el) {
+            output += '<div class="col-xl-4 col-lg-4 col-md-4">' +
+                '<div class="menu-list-box">' +
+                '<div class="list-img-3"><img src="' + el.img.src + '" alt="' + el.img.alt + '" width="350" height="233" loading="lazy"></div>' +
+                '<div class="menu-detail">' +
+                '<span class="iteam-name"> ' + el.name + ' </span>' +
+                '<p class="iteam-order">' + el.price + '</p>' +
+                '</div></div></div>';
         });
         document.getElementById('sweetPancakeMenu').innerHTML = output;
     }
 
     function printSandwichMenu(json) {
-        let output = ``;
-        json.forEach(el => {
-            output += `
-                <div class="col-xl-4 col-lg-4 col-md-4">
-					<div class="menu-list-box">
-						<div class="list-img"><img src="${el.img.src}" alt="${el.img.alt}"></div>
-						<div class="menu-detail">
-							<a href="#" class="iteam-name">${el.name} </a>
-                            <p class="iteam-order">${el.price}</p>
-						</div>
-					</div>
-				</div>
-                `;
+        var output = '';
+        json.forEach(function (el) {
+            output += '<div class="col-xl-4 col-lg-4 col-md-4">' +
+                '<div class="menu-list-box">' +
+                '<div class="list-img"><img src="' + el.img.src + '" alt="' + el.img.alt + '" width="350" height="233" loading="lazy"></div>' +
+                '<div class="menu-detail">' +
+                '<span class="iteam-name">' + el.name + ' </span>' +
+                '<p class="iteam-order">' + el.price + '</p>' +
+                '</div></div></div>';
         });
         document.getElementById('sandwichMenu').innerHTML = output;
-
-        fetchData("pancake", printPancakeMenu);
     }
 
     function printPizzaMenu(json) {
-        let output = ``;
-        json.forEach(el => {
-            output += `
-                <div class="col-xl-4 col-lg-4 col-md-4">
-					<div class="menu-list-box">
-						<div class="list-img"><img src="${el.img.src}" alt="${el.img.alt}"></div>
-						<div class="menu-detail">
-							<a href="#" class="iteam-name">${el.name} </a>
-							<ul>`;
-            el.ingredients.forEach(ing => {
-                output += `
-                    <li>${ing}</li>
-                    `
+        var output = '';
+        json.forEach(function (el) {
+            output += '<div class="col-xl-4 col-lg-4 col-md-4">' +
+                '<div class="menu-list-box">' +
+                '<div class="list-img"><img src="' + el.img.src + '" alt="' + el.img.alt + '" width="350" height="233" loading="lazy"></div>' +
+                '<div class="menu-detail">' +
+                '<span class="iteam-name">' + el.name + ' </span>' +
+                '<ul>';
+            el.ingredients.forEach(function (ing) {
+                output += '<li>' + ing + '</li>';
             });
-            output += `
-							</ul>`;
-            el.pricing.forEach(element => {
-                output += `
-                <p class="iteam-order">${element.size}cm&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;${element.price}</p>
-                `
+            output += '</ul>';
+            el.pricing.forEach(function (element) {
+                output += '<p class="iteam-order">' + element.size + 'cm&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;' + element.price + '</p>';
             });
-            output += `
-						</div>
-					</div>
-				</div>
-                `;
+            output += '</div></div></div>';
         });
         document.getElementById('pizzaMenu').innerHTML = output;
-
-        fetchData("sandwich", printSandwichMenu);
     }
 
-    function fetchData(file, callback) {
-        $.ajax({
-            url: "data/" + file + ".json",
-            method: "get",
-            dataType: "json",
-            success: function (response) {
-                callback(response);
-            },
-            error: function (err) {
-                console.log(err);
+    function fetchJson(file) {
+        return fetch('data/' + file + '.json?v=2')
+            .then(function (response) {
+                if (!response.ok) throw new Error('Failed to load ' + file);
+                return response.json();
+            });
+    }
+
+    var copyrightText = document.getElementById("copyright");
+    if (copyrightText) {
+        var year = new Date().getFullYear();
+        copyrightText.innerHTML = '&copy; Picerija Popaj Pan\u010devo 2004-' + year + '. Sva prava zadržana.';
+    }
+
+    var pizzaMenu = document.getElementById("pizzaMenu");
+    if (pizzaMenu != null) {
+        Promise.all([
+            fetchJson("pizza"),
+            fetchJson("sandwich"),
+            fetchJson("pancake")
+        ]).then(function (results) {
+            printPizzaMenu(results[0]);
+            printSandwichMenu(results[1]);
+            printPancakeMenu(results[2]);
+        }).catch(function () {
+            if (pizzaMenu) {
+                pizzaMenu.innerHTML = '<div class="col-12 text-center"><p style="color:#e63636;padding:20px;">Greška pri učitavanju menija. Molimo osvežite stranicu.</p></div>';
             }
         });
     }
 
-    $(document).ready(function () {
-        var copyrightText = document.getElementById("copyright");
-        var year = new Date().getFullYear();
-        copyrightText.innerHTML = `© Picerija Popaj Pančevo 2004-${year}. Sva prava zadržana.`;
-
-        var pizzaMenu = document.getElementById("pizzaMenu");
-        if (pizzaMenu != null) {
-            fetchData("pizza", printPizzaMenu);
-        }
-        responsive_dropdown();
-    });
+    responsive_dropdown();
 });

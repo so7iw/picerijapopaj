@@ -1,4 +1,10 @@
-<?php 
+<?php
+
+	if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+		http_response_code(405);
+		echo 'Method Not Allowed';
+		exit;
+	}
 
 	use PHPMailer\PHPMailer\PHPMailer;
 	use PHPMailer\PHPMailer\Exception;
@@ -8,20 +14,14 @@
 	require './phpmailer/src/SMTP.php';
 	require 'credential.php';
 
-	error_reporting(E_ALL);
-	ini_set('display_errors', 1);
-
 	$mail = new PHPMailer;
-
-	//$mail->SMTPDebug = 4;                               // Enable verbose debug output
-	//$mail->SMTPDebug = 2; 
 
 	$mail->isSMTP();                                      // Set mailer to use SMTP
 	$mail->Host = gethostbyname('mailcluster.loopia.se');  // Specify main and backup SMTP servers
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
 	$mail->Username = EMAIL;                 // SMTP username
 	$mail->Password = PASS;                           // SMTP password
-	$mail->SMTPSecure = 'PHPMailer::ENCRYPTION_STARTTLS';                            // Enable TLS encryption, `ssl` also accepted
+	$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;                            // Enable TLS encryption
 	$mail->Port = 587;                                    // TCP port to connect to
 
 	$mail->setFrom(EMAIL, 'Picerija Popaj');
@@ -29,18 +29,16 @@
 	$mail->addBcc("picerija.popaj.no.reply@gmail.com");
 
 	$mail->addAttachment($_FILES['file']['tmp_name'], $_FILES['file']['name']);
-			
-	$mail->isHTML(true);       // Set email format to HTML
-			
-	$mail->SMTPOptions = array(
-		'ssl' => array(
-				 'verify_peer' => false,
-				 'verify_peer_name' => false,
-				 'allow_self_signed' => true
-		)
-	);
 
-	$mail->Subject ="Prijava za zaposlenje {$_POST['firstname']} {$_POST['lastname']}";
+	$mail->isHTML(true);       // Set email format to HTML
+
+	$firstname = htmlspecialchars($_POST['firstname'], ENT_QUOTES, 'UTF-8');
+	$lastname = htmlspecialchars($_POST['lastname'], ENT_QUOTES, 'UTF-8');
+	$email = htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8');
+	$phone = htmlspecialchars($_POST['phone'], ENT_QUOTES, 'UTF-8');
+	$jobs = htmlspecialchars($_POST['jobs'], ENT_QUOTES, 'UTF-8');
+
+	$mail->Subject ="Prijava za zaposlenje {$firstname} {$lastname}";
 
 	$mail->Body = "<div style='text-align: left;'>
 			<h1>Nova prijava za posao</h1>
@@ -55,7 +53,7 @@
 						<h3>Ime i prezime:</h3>
 					</td>
 					<td>
-						<h3>{$_POST['firstname']} {$_POST['lastname']}</h3>
+						<h3>{$firstname} {$lastname}</h3>
 					</td>
 				</tr>
 				<tr>
@@ -63,7 +61,7 @@
 						<h3>Email:</h3>
 					</td>
 					<td>
-						<h3>{$_POST['email']}</h3>
+						<h3>{$email}</h3>
 					</td>
 				</tr>
 				<tr>
@@ -71,7 +69,7 @@
 						<h3>Broj telefona:</h3>
 					</td>
 					<td>
-						<h3>{$_POST['phone']}</h3>
+						<h3>{$phone}</h3>
 					</td>
 				</tr>
 				<tr>
@@ -79,12 +77,12 @@
 						<h3>Željena pozicija:</h3>
 					</td>
 					<td>
-						<h3>{$_POST['jobs']}</h3>
+						<h3>{$jobs}</h3>
 					</td>
 				</tr>
 			</table>
 		</div>";
-		
+
 	if(!$mail->send()) {
 		echo 'Message could not be sent.';
 		echo 'Mailer Error: ' . $mail->ErrorInfo;

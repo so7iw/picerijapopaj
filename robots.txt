@@ -1,2 +1,6 @@
 User-agent: *
-Disallow: /admin/
+Disallow: /credential.php
+Disallow: /mail.php
+Disallow: /phpmailer/
+
+Sitemap: https://www.picerijapopaj.com/sitemap.xml

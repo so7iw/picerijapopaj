@@ -247,10 +247,10 @@
 		margin-bottom: 0px;
 	}
 	.menu-width {max-width: 0 !important; padding: 0;}
-	#menu { background: #e63636; border-bottom: 0 none; bottom: 0; box-shadow: 0 0 1px rgba(0, 0, 0, 0.2); display: inline-block !important; height: 100% !important; left: -100%; margin: 0 !important; position: fixed !important; top: 70px !important; width: 100%; z-index: 2; transition: all 0.4s ease 0s; -moz-transition: all 0.4s ease 0s; -webkit-transition: all 0.4s ease 0s; -o-transition: all 0.4s ease 0s; overflow-y: auto !important; overflow-x: hidden !important; padding-right: 0;}
+	#menu { background: #e63636; border-bottom: 0 none; bottom: 0; box-shadow: 0 0 1px rgba(0, 0, 0, 0.2); display: inline-block !important; height: 100% !important; left: -100%; margin: 0 !important; position: fixed !important; top: var(--header-height, 70px) !important; width: 100%; z-index: 2; transition: all 0.4s ease 0s; -moz-transition: all 0.4s ease 0s; -webkit-transition: all 0.4s ease 0s; -o-transition: all 0.4s ease 0s; overflow-y: auto !important; overflow-x: hidden !important; padding-right: 0;}
 	#menu.show, #menu.menu-open {left: 0;}
-	.navbar-collapse {padding: 15px 15px 0 0;}
-	.navbar-collapse > ul {margin: 0;     width: 100%;}
+	.navbar-collapse {padding: 0 15px 0 0;}
+	.navbar-collapse > ul, .navbar-collapse > nav > ul {margin: 0;     width: 100%;}
 	.navbar-nav > li {display: inline-block; float: none; width: 100%; border-bottom: 1px solid rgb(0 0 0 / .5);}
 	.navbar-nav > li > a {padding: 15px 18px; color: #fff; display: block; margin-right: 40px;}
 	.nav > li:hover > a, .nav > li.active > a, .nav > li > a:focus {background: rgba(0, 0, 0, 0) none repeat scroll 0 0; color: #fff;}
@@ -274,7 +274,7 @@
 	.side-toggle {display: block; overflow: unset !important;}
 	.navbar-toggle { border: none; background: none; color: #333333; height: 27px; padding: 8px 10px; width: 30px; display: flex;}
 	.megamenu .level2 > a {color: #000000;}
-	.megamenu .sub-menu-level2 li.level3 > a {color: #fff; padding: 12px 0px;}
+	.megamenu .sub-menu-level2 li.level3 > a {color: #fff; display: block; padding: 12px 18px;}
 	.megamenu .sub-menu-level2 li.level3 > a:hover {color: #000;}
 	button.navbar-toggle i.fa {font-size: 24px; color: #fff;}
 	button:focus {outline: none;}
