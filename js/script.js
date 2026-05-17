@@ -128,12 +128,18 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('pizzaMenu').innerHTML = output;
     }
 
-    function fetchJson(file) {
-        return fetch('data/' + file + '.json?v=2')
-            .then(function (response) {
-                if (!response.ok) throw new Error('Failed to load ' + file);
-                return response.json();
-            });
+    function fetchData(file, callback) {
+        $.ajax({
+            url: "data/" + file + ".json?v=" + Date.now(),
+            method: "get",
+            dataType: "json",
+            success: function (response) {
+                callback(response);
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        });
     }
 
     var copyrightText = document.getElementById("copyright");
