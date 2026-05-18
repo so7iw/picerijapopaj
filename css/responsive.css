@@ -262,7 +262,7 @@
 	#menu span.plus {background-position: -94px -378px;}
 	#menu span.minus {background-position: -94px -416px;}
 	.megamenu .level2 > a {position: relative; margin-bottom: 2px; margin-right: 0;}
-	.megamenu .level2 > a:before {content: "ïƒš"; font-family: FontAwesome; position: absolute; left: -11px;}
+	.megamenu .level2 > a:before {content: ""; position: absolute; left: -11px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 4px solid transparent; border-bottom: 4px solid transparent; border-left: 5px solid currentColor;}
 	.menu-list-res {display: block;}
 	.navbar-header .navbar-brand {max-width: 150px;}
 
@@ -470,9 +470,6 @@
 	.releted-product {padding-bottom: 65px;}
 	.mb-md-30 {margin-bottom: 30px;}
 
-	.banner:before{
-		background-image: url(../images/crnotablet.jpg);
-	}
 	.banner{
 		height: 800px;
 	}
@@ -523,9 +520,6 @@
 		display: block;
 	}
 
-	.banner:before{
-		background-image: url(../images/crnomobile.jpg);
-	}
 	.container{max-width: 100%;}
 	.ptb {padding-top: 30px; padding-bottom: 20px;}
 	.pb-50 {padding-bottom: 20px;}
@@ -834,6 +828,7 @@
 	#ad{
 		height:540px;
 		background-image: url(../images/dubai-post.jpg);
+		background-image: image-set(url(../images/dubai-post.webp) type("image/webp"), url(../images/dubai-post.jpg) type("image/jpeg"));
 	  }
 
 	.pt-100 {padding-top: 30px;}

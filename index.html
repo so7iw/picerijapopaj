@@ -20,23 +20,55 @@
 	<meta property="og:image" content="https://www.picerijapopaj.com/images/list-3.jpg">
 	<meta property="og:description"
 		content="Ukoliko ste gladni i želite da nešto prezalogajite, ili okupljate društvo da gledate utakmicu - ne gledajte dalje. Pogledajte našu ponudu, odaberite uvek svežu picu, palačinku ili sendvič, i naručite je Popaj besplatnom dostavom.">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preconnect" href="https://www.googletagmanager.com">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Pacifico&display=swap">
-	<link rel="stylesheet" type="text/css" href="css/animations.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<style>
+	@font-face{font-family:'PT Sans Narrow';font-style:normal;font-weight:400;font-display:swap;src:url(css/fonts-google/pt-sans-narrow-400-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+	@font-face{font-family:'PT Sans Narrow';font-style:normal;font-weight:400;font-display:swap;src:url(css/fonts-google/pt-sans-narrow-400-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+	@font-face{font-family:'PT Sans Narrow';font-style:normal;font-weight:700;font-display:swap;src:url(css/fonts-google/pt-sans-narrow-700-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+	@font-face{font-family:'PT Sans Narrow';font-style:normal;font-weight:700;font-display:swap;src:url(css/fonts-google/pt-sans-narrow-700-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+	@font-face{font-family:'Pacifico';font-style:normal;font-weight:400;font-display:swap;src:url(css/fonts-google/pacifico-400-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+	@font-face{font-family:'Pacifico';font-style:normal;font-weight:400;font-display:swap;src:url(css/fonts-google/pacifico-400-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+	*,*::before,*::after{box-sizing:border-box}
+	.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}
+	.col-3,.col-4,.col-6,.col-9,.col-12,[class*="col-md-"],[class*="col-lg-"],[class*="col-xl-"]{position:relative;width:100%;padding-right:15px;padding-left:15px}
+	.col-3{flex:0 0 25%;max-width:25%}.col-4{flex:0 0 33.333%;max-width:33.333%}.col-6{flex:0 0 50%;max-width:50%}.col-9{flex:0 0 75%;max-width:75%}.col-12{flex:0 0 100%;max-width:100%}
+	@media(min-width:768px){.col-md-4{flex:0 0 33.333%;max-width:33.333%}.col-md-6{flex:0 0 50%;max-width:50%}.col-md-8{flex:0 0 66.667%;max-width:66.667%}.col-md-12{flex:0 0 100%;max-width:100%}}
+	@media(min-width:992px){.col-lg-2{flex:0 0 16.667%;max-width:16.667%}.col-lg-3{flex:0 0 25%;max-width:25%}.col-lg-4{flex:0 0 33.333%;max-width:33.333%}.col-lg-6{flex:0 0 50%;max-width:50%}.col-lg-8{flex:0 0 66.667%;max-width:66.667%}.col-lg-10{flex:0 0 83.333%;max-width:83.333%}.col-lg-12{flex:0 0 100%;max-width:100%}}
+	@media(min-width:1200px){.col-xl-3{flex:0 0 25%;max-width:25%}.col-xl-4{flex:0 0 33.333%;max-width:33.333%}.col-xl-6{flex:0 0 50%;max-width:50%}.col-xl-8{flex:0 0 66.667%;max-width:66.667%}.col-xl-9{flex:0 0 75%;max-width:75%}.col-xl-12{flex:0 0 100%;max-width:100%}}
+	.p-0{padding:0!important}.m-0{margin:0!important}.text-right{text-align:right!important}.text-center{text-align:center!important}.text-uppercase{text-transform:uppercase!important}.font-weight-bold{font-weight:700!important}
+	.d-none{display:none!important}.d-flex{display:flex!important}.d-block{display:block!important}
+	@media(min-width:992px){.d-lg-block{display:block!important}.d-none.d-lg-block{display:block!important}}
+	.collapse:not(.show){display:none}.collapse{display:block}
+	body{padding:0;margin:0;font-family:'PT Sans Narrow',sans-serif;font-size:16px;font-weight:400;color:#999}
+	h1,h2,h3,h4,h5,h6{padding:0;margin:0}ul,li{padding:0;margin:0;list-style:none}a{padding:0;margin:0;text-decoration:none;color:#1d1d1d;cursor:pointer}
+	header#header{position:fixed;top:0;width:100%;z-index:999;padding:15px 0;background-color:rgba(0,0,0,.5)}
+	.navbar-brand img{max-width:100%}.navbar-header .navbar-brand{padding:0;margin-right:0}
+	.banner{background-color:#121619;position:relative;min-height:110vh;display:flex;justify-content:center;align-items:center;overflow:hidden}
+	.banner-bg{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0}
+	.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+	.container{max-width:1230px;padding-left:15px;padding-right:15px;margin:0 auto}
+	.information-mobile{display:none}
+	.header-right-link{display:none}
+	@media(max-width:991px){.information-mobile{display:flex}.header-right-link{display:block}.banner{height:800px;min-height:auto}}
+	@media(max-width:767px){.banner{min-height:400px;height:auto}}
+	</style>
+	<link rel="stylesheet" href="css/bootstrap.min.css" media="print" onload="this.media='all'">
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.min.css">
+	<noscript><link rel="stylesheet" href="css/bootstrap.min.css"></noscript>
 	<meta name="google-site-verification" content="eOJ1g3u23KTMLOg1yWzcb-TYtYkYzs8CxUJs1M9o-e4" />
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-R2S2FL7PYW"></script>
+	<!-- Google tag (gtag.js) - deferred to not block FCP -->
 	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'G-R2S2FL7PYW');
+		window.addEventListener('load', function() {
+			var s = document.createElement('script');
+			s.src = 'https://www.googletagmanager.com/gtag/js?id=G-R2S2FL7PYW';
+			s.async = true;
+			document.head.appendChild(s);
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'G-R2S2FL7PYW');
+		});
 	</script>
 	<script type="application/ld+json">
 	{
@@ -98,7 +130,7 @@
 				<div class="col-xl-3 col-lg-2 col-md-4 col-3 p-0">
 					<div class="navbar-header">
 						<a class="navbar-brand page-scroll" href="index.html">
-							<img alt="Picerija Popaj logo" src="images/header-logo.png">
+							<picture><source srcset="images/header-logo.webp" type="image/webp"><img alt="Picerija Popaj logo" src="images/header-logo.png" fetchpriority="high"></picture>
 						</a>
 					</div>
 				</div>
@@ -185,6 +217,14 @@
 	<main>
 	<h1 class="sr-only">Picerija Popaj</h1>
 	<section class="banner" id="pageStart">
+		<picture>
+			<source srcset="images/crnomobile.webp" type="image/webp" media="(max-width: 767px)">
+			<source srcset="images/crnomobile.jpg" media="(max-width: 767px)">
+			<source srcset="images/crnotablet.webp" type="image/webp" media="(max-width: 991px)">
+			<source srcset="images/crnotablet.jpg" media="(max-width: 991px)">
+			<source srcset="images/crnapozadina.webp" type="image/webp">
+			<img src="images/crnapozadina.jpg" alt="" class="banner-bg" fetchpriority="high">
+		</picture>
 		<div class="row banner-row">
 			<div class="col-xl-3 col-lg-3 col-md-6 title-orientation show-info">
 				<ul>
@@ -382,7 +422,7 @@
 	<section class="order-section ptb">
 		<div class="container">
 			<div class="row">
-				<div class="order-top"><img src="images/order-top.png" alt="layer" loading="lazy"></div>
+				<div class="order-top"><picture><source srcset="images/order-top.webp" type="image/webp"><img src="images/order-top.png" alt="layer" loading="lazy"></picture></div>
 				<div class="col-xl-4 col-lg-4 col-md-4 col-4 servose-box text-center padding-lf">
 					<img src="images/order-1.svg" alt="order" class="order-img" width="90" height="90" loading="lazy">
 					<h2 class="order-title text-uppercase margin-bottom-20">Lako do obroka</h2>
@@ -404,7 +444,7 @@
 						recepture, savršeno uklopljeni ukusi samo za Vas, uključujući i potpuno originalne Popaj namaze!</p>
 					<p class="order-des d-block d-lg-none">Naše originalne recepture.</p>
 				</div>
-				<div class="order-bottom"><img src="images/order-bottom.png" alt="layer" loading="lazy"></div>
+				<div class="order-bottom"><picture><source srcset="images/order-bottom.webp" type="image/webp"><img src="images/order-bottom.png" alt="layer" loading="lazy"></picture></div>
 			</div>
 		</div>
 	</section>
@@ -914,7 +954,10 @@
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6">
 					<div class="about-pizzon-img">
-						<img src="images/about.png" alt="O Popaju" class="pizzon-ab" loading="lazy">
+						<picture>
+							<source srcset="images/about.webp" type="image/webp">
+							<img src="images/about.png" alt="O Popaju" class="pizzon-ab" loading="lazy">
+						</picture>
 					</div>
 				</div>
 			</div>
@@ -936,7 +979,7 @@
 				<div class="row">
 					<div class="col-xl-4 col-lg-4 col-md-4 footer-box">
 						<div class="footer-logo">
-							<img class="padding50" src="images/footer-logo.png" alt="Picerija Popaj logo" loading="lazy">
+							<picture><source srcset="images/footer-logo.webp" type="image/webp"><img class="padding50" src="images/footer-logo.png" alt="Picerija Popaj logo" loading="lazy"></picture>
 							<ul>
 								<li>
 									<a href="https://goo.gl/maps/vQ7ADdxZWBPnu5LB8" target="_blank">Vojvode Radomira
@@ -999,9 +1042,9 @@
 		</div>
 	</footer>
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/script.js?v=2"></script>
+	<script src="js/jquery.min.js" defer></script>
+	<script src="js/bootstrap.min.js" defer></script>
+	<script src="js/script.min.js?v=3" defer></script>
 
 </body>
 

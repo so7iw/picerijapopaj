@@ -22,11 +22,20 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    $(document).scroll(function () {
-        var $nav = $("#header");
-        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-        $('.top-scrolling, .widgetPhone').toggleClass("sticky", $(this).scrollTop() > 90);
-    });
+    var headerEl = document.getElementById('header');
+    var stickyEls = document.querySelectorAll('.top-scrolling, .widgetPhone');
+    var scrollTicking = false;
+    window.addEventListener('scroll', function () {
+        if (!scrollTicking) {
+            scrollTicking = true;
+            requestAnimationFrame(function () {
+                var st = window.pageYOffset;
+                if (headerEl) headerEl.classList.toggle('scrolled', st > headerEl.offsetHeight);
+                stickyEls.forEach(function (el) { el.classList.toggle('sticky', st > 90); });
+                scrollTicking = false;
+            });
+        }
+    }, { passive: true });
 
     $('#cv').change(function () {
         if ($('#cv')[0].files[0] != null)
@@ -79,12 +88,16 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    function toWebp(src) {
+        return src.replace(/\.(jpe?g|png)$/i, '.webp');
+    }
+
     function printPancakeMenu(json) {
         var output = '';
         json.forEach(function (el) {
             output += '<div class="col-xl-4 col-lg-4 col-md-4">' +
                 '<div class="menu-list-box">' +
-                '<div class="list-img-3"><img src="' + el.img.src + '" alt="' + el.img.alt + '" width="350" height="233" loading="lazy"></div>' +
+                '<div class="list-img-3"><picture><source srcset="' + toWebp(el.img.src) + '" type="image/webp"><img src="' + el.img.src + '" alt="' + el.img.alt + '" width="350" height="233" loading="lazy"></picture></div>' +
                 '<div class="menu-detail">' +
                 '<span class="iteam-name"> ' + el.name + ' </span>' +
                 '<p class="iteam-order">' + el.price + '</p>' +
@@ -98,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
         json.forEach(function (el) {
             output += '<div class="col-xl-4 col-lg-4 col-md-4">' +
                 '<div class="menu-list-box">' +
-                '<div class="list-img"><img src="' + el.img.src + '" alt="' + el.img.alt + '" width="350" height="233" loading="lazy"></div>' +
+                '<div class="list-img"><picture><source srcset="' + toWebp(el.img.src) + '" type="image/webp"><img src="' + el.img.src + '" alt="' + el.img.alt + '" width="350" height="233" loading="lazy"></picture></div>' +
                 '<div class="menu-detail">' +
                 '<span class="iteam-name">' + el.name + ' </span>' +
                 '<p class="iteam-order">' + el.price + '</p>' +
@@ -112,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
         json.forEach(function (el) {
             output += '<div class="col-xl-4 col-lg-4 col-md-4">' +
                 '<div class="menu-list-box">' +
-                '<div class="list-img"><img src="' + el.img.src + '" alt="' + el.img.alt + '" width="350" height="233" loading="lazy"></div>' +
+                '<div class="list-img"><picture><source srcset="' + toWebp(el.img.src) + '" type="image/webp"><img src="' + el.img.src + '" alt="' + el.img.alt + '" width="350" height="233" loading="lazy"></picture></div>' +
                 '<div class="menu-detail">' +
                 '<span class="iteam-name">' + el.name + ' </span>' +
                 '<ul>';
@@ -128,17 +141,11 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('pizzaMenu').innerHTML = output;
     }
 
-    function fetchData(file, callback) {
-        $.ajax({
+    function fetchJson(file) {
+        return $.ajax({
             url: "data/" + file + ".json?v=" + Date.now(),
             method: "get",
-            dataType: "json",
-            success: function (response) {
-                callback(response);
-            },
-            error: function (err) {
-                console.log(err);
-            }
+            dataType: "json"
         });
     }
 

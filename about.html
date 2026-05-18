@@ -20,22 +20,29 @@
 	<meta property="og:description"
 		content="Danas smo poznati po tome što jedini u gradu, a i šire, nesebično nudimo najmasivnije pice, filujemo najsočnije palačinke i pravimo najdeblje sendviče, ni trena ne štedeći sastojke. Na taj način iskazujemo poštovanje prema ljudima koji nas svakodnevno posećuju, ali i dajemo dobar primer svima koji žele da krenu našim stopama.">
 	<meta name="author" content="Milos Stojanovski">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preconnect" href="https://www.googletagmanager.com">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Pacifico&display=swap">
-	<link rel="stylesheet" type="text/css" href="css/animations.css">
+
+	<style>
+	@font-face{font-family:'PT Sans Narrow';font-style:normal;font-weight:400;font-display:swap;src:url(css/fonts-google/pt-sans-narrow-400-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+	@font-face{font-family:'PT Sans Narrow';font-style:normal;font-weight:400;font-display:swap;src:url(css/fonts-google/pt-sans-narrow-400-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+	@font-face{font-family:'PT Sans Narrow';font-style:normal;font-weight:700;font-display:swap;src:url(css/fonts-google/pt-sans-narrow-700-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+	@font-face{font-family:'PT Sans Narrow';font-style:normal;font-weight:700;font-display:swap;src:url(css/fonts-google/pt-sans-narrow-700-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+	@font-face{font-family:'Pacifico';font-style:normal;font-weight:400;font-display:swap;src:url(css/fonts-google/pacifico-400-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+	@font-face{font-family:'Pacifico';font-style:normal;font-weight:400;font-display:swap;src:url(css/fonts-google/pacifico-400-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+	</style>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.min.css">
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-R2S2FL7PYW"></script>
 	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'G-R2S2FL7PYW');
+		window.addEventListener('load', function() {
+			var s = document.createElement('script');
+			s.src = 'https://www.googletagmanager.com/gtag/js?id=G-R2S2FL7PYW';
+			s.async = true;
+			document.head.appendChild(s);
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'G-R2S2FL7PYW');
+		});
 	</script>
 </head>
 
@@ -310,9 +317,9 @@
 		</div>
 	</footer>
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/script.js?v=2"></script>
+	<script src="js/jquery.min.js" defer></script>
+	<script src="js/bootstrap.min.js" defer></script>
+	<script src="js/script.min.js?v=3" defer></script>
 
 </body>
 
